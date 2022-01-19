@@ -1,0 +1,1329 @@
+<!DOCTYPE html>
+<!-- saved from url=(0041)https://www.kaggle.com/karangadiya/fifa19 -->
+<html lang="en" style=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  
+  
+  
+  
+    
+  
+  <script type="text/javascript" async="" src="./FIFA 19 complete player dataset _ Kaggle_files/js" nonce=""></script><script src="./FIFA 19 complete player dataset _ Kaggle_files/cb=gapi.loaded_0" nonce="" async=""></script><script type="text/javascript" async="" src="./FIFA 19 complete player dataset _ Kaggle_files/analytics.js.download" nonce=""></script><script nonce="" type="text/javascript">
+    window["pageRequestStartTime"] = 1642592205437;
+    window["pageRequestEndTime"] = 1642592205460;
+    window["initialPageLoadStartTime"] = new Date().getTime();
+  </script>
+  <link rel="preconnect" href="https://www.google-analytics.com/" crossorigin="anonymous"><link rel="preconnect" href="https://stats.g.doubleclick.net/"><link rel="preconnect" href="https://storage.googleapis.com/"><link rel="preconnect" href="https://apis.google.com/">
+  <link href="https://www.kaggle.com/static/images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <link rel="manifest" href="https://www.kaggle.com/static/json/manifest.json" crossorigin="use-credentials">
+
+
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+  <link href="./FIFA 19 complete player dataset _ Kaggle_files/icon" rel="preload" as="style">
+  <link href="./FIFA 19 complete player dataset _ Kaggle_files/css" rel="preload" as="style">
+  <link href="./FIFA 19 complete player dataset _ Kaggle_files/icon" rel="stylesheet" media="all" id="async-google-font-1">
+  <link href="./FIFA 19 complete player dataset _ Kaggle_files/css" rel="stylesheet" media="all" id="async-google-font-2">
+  <script nonce="" type="text/javascript">
+    const styleSheetIds = ["async-google-font-1", "async-google-font-2"];
+    styleSheetIds.forEach(function (id) {
+      document.getElementById(id).addEventListener("load", function() {
+        this.media = "all";
+      });
+    });
+  </script>
+
+    <link rel="stylesheet" type="text/css" href="./FIFA 19 complete player dataset _ Kaggle_files/vendor.css">
+    <link rel="stylesheet" type="text/css" href="./FIFA 19 complete player dataset _ Kaggle_files/app.css">
+  
+    
+ 
+      <script nonce="">
+        try{(function(a,s,y,n,c,h,i,d,e){d=s.createElement("style");
+        d.appendChild(s.createTextNode(""));s.head.appendChild(d);d=d.sheet;
+        y=y.map(x => d.insertRule(x + "{ opacity: 0 !important }"));
+        h.start=1*new Date;h.end=i=function(){y.forEach(x => x<d.cssRules.length ? d.deleteRule(x) : {})};
+        (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+        })(window,document,['.site-header-react__nav'],'dataLayer',2000,{'GTM-52LNT9S':true});}catch(ex){}
+    </script><style></style>
+    <script nonce="">
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-12629138-1', {
+            'optimize_id': 'GTM-52LNT9S',
+            'displayFeaturesTask': null,
+            'send_page_view': false,
+            'content_group1': 'Datasets'
+        });
+    </script>
+    <script nonce="" async="" src="./FIFA 19 complete player dataset _ Kaggle_files/js(1)"></script>
+
+  
+    
+    
+    
+    
+    
+
+
+   
+  
+    
+
+  
+    
+
+  
+    
+    
+<script nonce="" type="text/javascript">
+    var Kaggle = window.Kaggle || {};
+
+    Kaggle.Current = {
+        userId: 9221144,
+        userProfileUrl: '/muhammadmudassir5',
+        userDisplayNameEscaped: 'Muhammad Mudassir5',
+        userThumbnailUrl: 'https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png',
+        userEmail: 'muhammadmudasir1105@gmail.com',
+        userIsPhoneVerified: false,
+        userName: 'muhammadmudassir5',
+        tier: 'Novice',
+        antiForgeryToken: 'CfDJ8LdUzqlsSWBPr4Ce3rb9VL8UZsjxya-4EKDNbhU0COg7_esqyoAP9Ess356EtNIk6Wj80ch0Aq0ATHCtTHsG8AahPWb291h3atHh1FaK7SCnjSsey1cMJC9b_yQsjA-r7nudUUfXPcLpC012NUE9JnIIQK1lbhzR7JJfQ-WpjWwIm-uRRH7UNg8fNJjIUwEYBg',
+        isAnonymous: false,
+        analyticsToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NDI1OTMxMDUsIlVzZXJJZCI6OTIyMTE0NH0.atC2p06hiQ8HE2iRRTZUfCvye_o-heLSWpgJ8gt5TRo',
+        analyticsTokenExpiry: 15,
+        
+        
+        
+        
+        
+        
+        
+        enableRapidash: true, 
+    }
+        Kaggle.Current.log = function(){};
+        Kaggle.Current.warn = function(){};
+
+    var decodeUserDisplayName = function () {
+        var escapedUserDisplayName = Kaggle.Current.userDisplayNameEscaped || "";
+        try {
+            var textVersion = new DOMParser().parseFromString(escapedUserDisplayName, "text/html").documentElement.textContent;
+            if (textVersion) {
+                return textVersion;
+            }
+        } catch(ex) {}
+        return escapedUserDisplayName;
+    }
+    Kaggle.Current.userDisplayName = decodeUserDisplayName();
+</script>
+
+    
+
+<script nonce="" type="text/javascript">
+    var Kaggle = window.Kaggle || {};
+    Kaggle.PageMessages = [];
+</script>
+
+
+
+    <script nonce="">window['useKaggleAnalytics'] = true;</script>
+
+  <script id="gapi-target" nonce="" src="./FIFA 19 complete player dataset _ Kaggle_files/api.js.download" defer="" async="" gapi_processed="true"></script>
+  <script nonce="" src="./FIFA 19 complete player dataset _ Kaggle_files/runtime.js.download" data-turbolinks-track="reload"></script>
+  <script nonce="" src="./FIFA 19 complete player dataset _ Kaggle_files/vendor.js.download" data-turbolinks-track="reload"></script>
+  <script nonce="" src="./FIFA 19 complete player dataset _ Kaggle_files/app.js.download" data-turbolinks-track="reload"></script>
+    <script nonce="" type="text/javascript">
+      window.kaggleStackdriverConfig = {
+        key: 'AIzaSyA4eNqUdRRskJsCZWVz-qL655Xa5JEMreE',
+        projectId: 'kaggle-161607',
+        service: 'web-fe',
+        version: 'ci',
+        userId: '9221144'
+      }
+    </script>
+<link rel="stylesheet" type="text/css" href="./FIFA 19 complete player dataset _ Kaggle_files/datasetListMaterial.7ec0f6d9aeee244c5cc9.css"><style data-styled="active" data-styled-version="5.3.0"></style><link rel="stylesheet" type="text/css" href="./FIFA 19 complete player dataset _ Kaggle_files/4.203e4ddbf8e58555799c.css"><link rel="stylesheet" type="text/css" href="./FIFA 19 complete player dataset _ Kaggle_files/3094.0ee55c723b2d8ac67383.css"><style data-react-tooltip="true">.__react_component_tooltip {
+  border-radius: 3px;
+  display: inline-block;
+  font-size: 13px;
+  left: -999em;
+  opacity: 0;
+  padding: 8px 21px;
+  position: fixed;
+  pointer-events: none;
+  transition: opacity 0.3s ease-out;
+  top: -999em;
+  visibility: hidden;
+  z-index: 999;
+}
+.__react_component_tooltip.allow_hover, .__react_component_tooltip.allow_click {
+  pointer-events: auto;
+}
+.__react_component_tooltip::before, .__react_component_tooltip::after {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+}
+.__react_component_tooltip.show {
+  opacity: 0.9;
+  margin-top: 0;
+  margin-left: 0;
+  visibility: visible;
+}
+.__react_component_tooltip.place-top::before {
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  bottom: -8px;
+  left: 50%;
+  margin-left: -10px;
+}
+.__react_component_tooltip.place-bottom::before {
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  top: -8px;
+  left: 50%;
+  margin-left: -10px;
+}
+.__react_component_tooltip.place-left::before {
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  right: -8px;
+  top: 50%;
+  margin-top: -5px;
+}
+.__react_component_tooltip.place-right::before {
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  left: -8px;
+  top: 50%;
+  margin-top: -5px;
+}
+.__react_component_tooltip .multi-line {
+  display: block;
+  padding: 2px 0;
+  text-align: center;
+}</style><title>FIFA 19 complete player dataset | Kaggle</title><meta name="robots" content="index, follow"><meta name="description" content="18k+ FIFA 19 players, ~90 attributes extracted from the latest FIFA database"><meta name="turbolinks-cache-control" content="no-cache"><meta name="keywords" content="sports,data visualization,football,feature engineering,random forest"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0"><meta name="theme-color" content="#008ABC"><meta property="og:url" content="https://kaggle.com/karangadiya/fifa19"><meta property="og:title" content="FIFA 19 complete player dataset"><meta property="og:description" content="18k+ FIFA 19 players, ~90 attributes extracted from the latest FIFA database"><meta property="og:type" content="website"><meta property="og:image" content="https://storage.googleapis.com/kaggle-datasets-images/73041/162580/a17bc456289e382192bebd8bb595719d/dataset-card.jpg?t=2018-11-04-22-19-55"><meta property="fb:app_id" content="2665027677054710"><meta name="twitter:card" content="summary"><meta name="twitter:site" content="@kaggledatasets"><meta name="twitter:site" content="@Kaggle"><link href="./FIFA 19 complete player dataset _ Kaggle_files/icon" rel="stylesheet" media="print" id="async-google-font-1"><link href="./FIFA 19 complete player dataset _ Kaggle_files/css" rel="stylesheet" media="print" id="async-google-font-2"><link rel="alternate" type="application/json+oembed" href="https://www.kaggle.com/oembed/dataset?url=https%3A%2F%2Fwww.kaggle.com%2Fkarangadiya%2Ffifa19" title="FIFA 19 complete player dataset"><link rel="stylesheet" type="text/css" href="./FIFA 19 complete player dataset _ Kaggle_files/4606.0b070b6d0627c3947756.css"><link rel="stylesheet" type="text/css" href="./FIFA 19 complete player dataset _ Kaggle_files/2775.bb0f3cd266fcb6b8c18b.css"><link rel="stylesheet" type="text/css" href="./FIFA 19 complete player dataset _ Kaggle_files/8405.4c09ef25a0bcc830f0b8.css"><link rel="stylesheet" type="text/css" href="./FIFA 19 complete player dataset _ Kaggle_files/datasetContainer.92e8e8028a026c85a58f.css"><link rel="stylesheet" type="text/css" href="./FIFA 19 complete player dataset _ Kaggle_files/2970.9bfe6298d78eda74a00a.css"><script type="text/javascript" charset="UTF-8" src="./FIFA 19 complete player dataset _ Kaggle_files/loader.js.download" nonce=""></script><link id="load-css-0" rel="stylesheet" type="text/css" href="./FIFA 19 complete player dataset _ Kaggle_files/tooltip.css"><link id="load-css-1" rel="stylesheet" type="text/css" href="./FIFA 19 complete player dataset _ Kaggle_files/util.css"><link id="load-css-2" rel="stylesheet" type="text/css" href="./FIFA 19 complete player dataset _ Kaggle_files/controls.css"><script type="text/javascript" charset="UTF-8" src="./FIFA 19 complete player dataset _ Kaggle_files/jsapi_compiled_default_module.js.download" nonce=""></script><script type="text/javascript" charset="UTF-8" src="./FIFA 19 complete player dataset _ Kaggle_files/jsapi_compiled_graphics_module.js.download" nonce=""></script><script type="text/javascript" charset="UTF-8" src="./FIFA 19 complete player dataset _ Kaggle_files/jsapi_compiled_ui_module.js.download" nonce=""></script><script type="text/javascript" charset="UTF-8" src="./FIFA 19 complete player dataset _ Kaggle_files/jsapi_compiled_corechart_module.js.download" nonce=""></script><script type="text/javascript" charset="UTF-8" src="./FIFA 19 complete player dataset _ Kaggle_files/jsapi_compiled_controls_module.js.download" nonce=""></script></head>
+
+<body data-turbolinks="false">
+  <main>
+    
+
+
+
+
+
+
+<div id="site-container"><div style="--mdc-theme-on-primary:#fff; --mdc-theme-on-surface:rgba(0, 0, 0, 0.87); --mdc-theme-text-primary-on-background:rgba(0, 0, 0, 0.87); --mdc-theme-text-secondary-on-background:rgba(0, 0, 0, 0.54); --mdc-theme-text-hint-on-background:rgba(0, 0, 0, 0.38); --mdc-theme-text-disabled-on-background:rgba(0, 0, 0, 0.38); --mdc-theme-text-icon-on-background:rgba(0, 0, 0, 0.38); --mdc-theme-primary:#20BEFF; --mdc-theme-error:#F58B8A; --mdc-theme-background:#F8F8F8; --mdc-theme-surface:#fff; --mdc-theme-primary-bg:#20BEFF; --mdc-theme-secondary-bg:#919294;"><div class="sc-amkrK dScSsf"><div class="sc-kmIPcE gxIhXo"><div class="sc-gzcbmu fKwyEY"><div class="sc-gkCoMD jkYxvj"><button aria-label="menu" class="sc-jSFjdj SCuyd undefined google-material-icons">menu</button></div><a href="https://www.kaggle.com/karangadiya/fifa19#site-content" class="sc-fIxmyt cnkbFD">Skip to<br>content</a><div class="sc-flUlpA csQKXo"><a href="https://www.kaggle.com/"><img src="./FIFA 19 complete player dataset _ Kaggle_files/site-logo.png" alt="Kaggle" class="sc-fWWYYk fepHIR"></a></div></div></div><div class="sc-cwiweh hSNYlT"><div class="sc-dkuGKe gkHjlo"><div class="sc-gstuGz fUptzV"><div class="sc-jtiXyc bdGDdI"><i sizevalue="24px" class="rmwc-icon google-material-icons sc-gKAaRy iExPwm sc-cKRKFl dVkdSY">search</i><input placeholder="Search" aria-label="Search" class="sc-ellfGf fZONTb" value=""></div></div></div><div class="sc-gJpXkD inBmZO"><div class="sc-ljsmAU jFDlvU"><div class="sc-jlZJtj iermfu"><div class="sc-bQCEYZ irmCui"><img class="sc-cOifOu fbdqRo" src="./FIFA 19 complete player dataset _ Kaggle_files/default-thumb.png" alt="Profile picture for undefined" role="button" tabindex="0"></div></div></div></div></div></div><div class="sc-cGKJhA sc-gGuRsA bKpBWG fpAbJV"><div class="sc-iueNdr hNbBJd"><div class="sc-gzcbmu fKwyEY"><div class="sc-gkCoMD jkYxvj"><button aria-label="menu" class="sc-jSFjdj SCuyd undefined google-material-icons">menu</button></div><a href="https://www.kaggle.com/karangadiya/fifa19#site-content" class="sc-fIxmyt cnkbFD">Skip to<br>content</a><div class="sc-flUlpA csQKXo"><a href="https://www.kaggle.com/"><img src="./FIFA 19 complete player dataset _ Kaggle_files/site-logo.png" alt="Kaggle" class="sc-fWWYYk fepHIR"></a></div></div></div><div class="sc-dbXCOC fCfyBJ"><button class="sc-JsfZP iSoPXs"><svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink: 0;"><path fill-rule="evenodd" clip-rule="evenodd" d="M20 30L20 16L16 20L16 30L20 30Z" fill="#20BEFF"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M20 20L30 20L30 16L20 16L20 20Z" fill="#20BEFF"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M16 20L20 16L15.937 16L6 16L6 20L16 20Z" fill="#20BEFF"></path><rect x="20" y="16" width="4" height="10" transform="rotate(-180 20 16)" fill="#20BEFF"></rect></svg><span class="sc-ezzafa sc-bYwzuL sc-gGGFjW dfGXIV fDDjHD euOoxv">Create</span></button><div aria-hidden="true" class="mdc-menu sc-bTDOke ipxHyb sc-dksuTV zPuL mdc-menu-surface" style="transform-origin: left top; left: 0px; top: 0px; max-height: 625px;"><div role="menu" class="mdc-list mdc-menu__items mdc-list"><div role="menuitem" tabindex="0" class="sc-dFRpbK dfyLpe mdc-ripple-upgraded sc-dFRpbK dfyLpe mdc-list-item"><div class="sc-gIvpjk dVRMhB"><i sizevalue="24px" class="rmwc-icon google-material-icons sc-gKAaRy iExPwm sc-bsatvv gHEtUc">code</i><p class="sc-cxNHIi sc-lmgQwP kYejgE hpRDUw">New Notebook</p></div></div><div role="menuitem" tabindex="0" class="sc-dFRpbK dfyLpe mdc-ripple-upgraded sc-dFRpbK dfyLpe mdc-list-item"><div class="sc-gIvpjk dVRMhB"><i sizevalue="24px" class="rmwc-icon google-material-icons sc-gKAaRy iExPwm sc-bsatvv gHEtUc">table_chart</i><p class="sc-cxNHIi sc-lmgQwP kYejgE hpRDUw">New Dataset</p></div></div></div></div></div><div class="sc-ehALMs carCnm"><div class="sc-iuImSO kvVICe"><div class="sc-juXuNZ KigMW"><div class="sc-ecQkzk ifkSMQ"><div class="sc-gstuGz fUptzV"><div class="sc-jtiXyc bdGDdI"><i sizevalue="24px" class="rmwc-icon google-material-icons sc-gKAaRy iExPwm sc-cKRKFl dVkdSY">search</i><input placeholder="Search" aria-label="Search" class="sc-ellfGf fZONTb" value=""></div></div></div><ul class="km-list"><li class="sc-gSYDnn jcqGXt"><div class="sc-laZMeE jaMIyn sc-hkoqWr icXmqY"><a class="sc-eJocfa jARayQ" href="https://www.kaggle.com/"><i emphasis="low" sizevalue="24px" class="rmwc-icon google-material-icons sc-gKAaRy yTsEt sc-bShgHC aBwtF">explore</i><p class="sc-bCwfaz sc-iwajpm eTBoyV kydRHc" style="padding-left: 20px;">Home</p></a></div></li><li class="sc-gSYDnn jcqGXt"><div class="sc-laZMeE jaMIyn sc-hkoqWr icXmqY"><a class="sc-eJocfa jARayQ" href="https://www.kaggle.com/competitions"><i emphasis="low" sizevalue="24px" class="rmwc-icon google-material-icons sc-gKAaRy yTsEt sc-bShgHC aBwtF">emoji_events</i><p class="sc-bCwfaz sc-iwajpm eTBoyV kydRHc" style="padding-left: 20px;">Competitions</p></a></div></li><li class="sc-gSYDnn jcqGXt"><div class="sc-laZMeE kwAObj sc-hkoqWr icXmqY"><a class="sc-eJocfa jARayQ" href="https://www.kaggle.com/datasets"><i emphasis="high" sizevalue="24px" class="rmwc-icon google-material-icons sc-gKAaRy iExPwm sc-bShgHC aBwtF">table_chart</i><p class="sc-bCwfaz sc-iwajpm jLqmUy kydRHc" style="padding-left: 20px;">Datasets</p><div class="sc-jhGUec eCKATj"></div></a></div></li><li class="sc-gSYDnn jcqGXt"><div class="sc-laZMeE jaMIyn sc-hkoqWr icXmqY"><a class="sc-eJocfa jARayQ" href="https://www.kaggle.com/code"><i emphasis="low" sizevalue="24px" class="rmwc-icon google-material-icons sc-gKAaRy yTsEt sc-bShgHC aBwtF">code</i><p class="sc-bCwfaz sc-iwajpm eTBoyV kydRHc" style="padding-left: 20px;">Code</p></a></div></li><li class="sc-gSYDnn jcqGXt"><div class="sc-laZMeE jaMIyn sc-hkoqWr icXmqY"><a class="sc-eJocfa jARayQ" href="https://www.kaggle.com/discussion"><i emphasis="low" sizevalue="24px" class="rmwc-icon google-material-icons sc-gKAaRy yTsEt sc-bShgHC aBwtF">comment</i><p class="sc-bCwfaz sc-iwajpm eTBoyV kydRHc" style="padding-left: 20px;">Discussions</p></a></div></li><li class="sc-gSYDnn jcqGXt"><div class="sc-laZMeE jaMIyn sc-hkoqWr icXmqY"><a class="sc-eJocfa jARayQ" href="https://www.kaggle.com/learn"><i emphasis="low" sizevalue="24px" class="rmwc-icon google-material-icons sc-gKAaRy yTsEt sc-bShgHC aBwtF">school</i><p class="sc-bCwfaz sc-iwajpm eTBoyV kydRHc" style="padding-left: 20px;">Courses</p></a></div></li><li class="sc-gSYDnn jcqGXt"><div class="sc-laZMeE jaMIyn sc-hkoqWr icXmqY"><a class="sc-eJocfa jARayQ" href="https://www.kaggle.com/karangadiya/fifa19#"><i emphasis="low" sizevalue="24px" class="rmwc-icon google-material-icons sc-gKAaRy yTsEt sc-bShgHC aBwtF">expand_more</i><p class="sc-bCwfaz sc-iwajpm eTBoyV kydRHc" style="padding-left: 20px;">More</p></a></div></li></ul></div><div><div class="sc-kHVIJG gQGhAy sc-Jgsit bNqXxX"></div><ul style="padding-bottom: 36px;"><li class="sc-gSYDnn jcqGXt"><div class="sc-laZMeE jaMIyn sc-hkoqWr icXmqY"><a class="sc-eJocfa jARayQ" href="https://www.kaggle.com/muhammadmudassir5"><i emphasis="low" sizevalue="24px" class="rmwc-icon google-material-icons sc-gKAaRy yTsEt sc-bShgHC aBwtF">note_alt</i><p class="sc-bCwfaz sc-iwajpm eTBoyV kydRHc" style="padding-left: 20px;">Your Work</p></a></div></li><li><ul class="km-list km-list--dense sc-gXZlLH eDIGjo"><li tabindex="0" class="sc-gSYDnn jcqGXt"><div class="sc-laZMeE jaMIyn sc-bFSbwS bAKETB"><i emphasis="low" sizevalue="24px" class="rmwc-icon google-material-icons sc-gKAaRy yTsEt">arrow_drop_down</i><span class="sc-iBzEeX sc-efHYUO sc-fxFQKN keYuAL cFSLxQ ejoSBg">Recently Viewed</span></div></li><li class="sc-gSYDnn jcqGXt"><div class="sc-laZMeE jaMIyn sc-fyGvY fLibQH"><a class="sc-eJocfa jARayQ" href="https://www.kaggle.com/karangadiya/fifa19?rvi=1"><img src="./FIFA 19 complete player dataset _ Kaggle_files/dataset-thumbnail.jpg" alt="FIFA 19 complete player dataset" width="20" height="20" class="sc-igOmtu hoOMxC"><p class="sc-cxNHIi sc-lmgQwP sc-cjzNjn ctyHFD hpRDUw cIJaKN">FIFA 19 complete player dataset</p></a></div></li><li class="sc-gSYDnn jcqGXt"><div class="sc-laZMeE jaMIyn sc-fyGvY fLibQH"><a class="sc-eJocfa jARayQ" href="https://www.kaggle.com/sreebink/complete-predictive-analytics-on-fifa-19?rvi=1"><img src="./FIFA 19 complete player dataset _ Kaggle_files/8138236-kg.jpeg" alt="Complete Predictive Analytics on FIFA 19" width="20" height="20" class="sc-igOmtu difdUq"><p class="sc-cxNHIi sc-lmgQwP sc-cjzNjn ctyHFD hpRDUw cIJaKN">Complete Predictive Analytics on FIFA 19</p></a></div></li><li class="sc-gSYDnn jcqGXt"><div class="sc-laZMeE jaMIyn sc-fyGvY fLibQH"><a class="sc-eJocfa jARayQ" href="https://www.kaggle.com/mpwolke/objection-sustained-overruled-proceed?rvi=1"><img src="./FIFA 19 complete player dataset _ Kaggle_files/3012786-kg.JPG" alt="Objection Sustained/Overruled Proceed" width="20" height="20" class="sc-igOmtu difdUq"><p class="sc-cxNHIi sc-lmgQwP sc-cjzNjn ctyHFD hpRDUw cIJaKN">Objection Sustained/Overruled Proceed</p></a></div></li><li class="sc-gSYDnn jcqGXt"><div class="sc-laZMeE jaMIyn sc-fyGvY fLibQH"><a class="sc-eJocfa jARayQ" href="https://www.kaggle.com/deepcontractor/supreme-court-judgment-prediction?rvi=1"><img src="./FIFA 19 complete player dataset _ Kaggle_files/dataset-thumbnail.jpeg" alt="Supreme Court Judgment Prediction" width="20" height="20" class="sc-igOmtu hoOMxC"><p class="sc-cxNHIi sc-lmgQwP sc-cjzNjn ctyHFD hpRDUw cIJaKN">Supreme Court Judgment Prediction</p></a></div></li><li class="sc-gSYDnn jcqGXt"><div class="sc-laZMeE jaMIyn sc-fyGvY fLibQH"><a class="sc-eJocfa jARayQ" href="https://www.kaggle.com/rajeevnair676/eda-smote-logistic-regression?rvi=1"><img src="./FIFA 19 complete player dataset _ Kaggle_files/7428731-kg.png" alt="EDA, SMOTE, Logistic regression" width="20" height="20" class="sc-igOmtu difdUq"><p class="sc-cxNHIi sc-lmgQwP sc-cjzNjn ctyHFD hpRDUw cIJaKN">EDA, SMOTE, Logistic regression</p></a></div></li></ul></li><li></li><li></li></ul></div></div><div class="sc-dwxYdI bWwHur"><div class="mdc-menu-surface--anchor"><button class="sc-ePZAhl iwzroC"><div class="sc-ffgBur OeZLy"><i emphasis="high" sizevalue="24px" class="rmwc-icon google-material-icons sc-gKAaRy iExPwm sc-lcvaEy dfPHWA">auto_awesome_motion</i><div color="#FAE041" class="sc-fpAkvV gROLTA">0</div></div><p class="sc-bCwfaz sc-iwajpm sc-kNnZrs eTBoyV kydRHc iuWIiL">View Active Events</p></button></div></div></div></div><div data-testid="searchContainer" class="sc-cgTEYn bEeAXa"><div></div><div class="sc-ieieiu grcoOM"><div></div></div></div><div id="site-content" class="sc-hJFzke gzOKbQ"><div class="sc-liAPKD iwClXr"></div><div id="site-body" class="">
+    
+
+
+<div data-component-name="DatasetContainer" style="display: flex; flex-direction: column; flex: 1 0 auto;"></div><script class="kaggle-component" nonce="">var Kaggle=window.Kaggle||{};Kaggle.State=Kaggle.State||[];Kaggle.State.push({"title":"FIFA 19 complete player dataset","slug":"fifa19","licenseId":3,"data":{"firestorePath":"mO7pb667eE4A7AP4npSx/versions/eGPJ5NGY4TOcfHy1eCgO","databundleVersionId":231965,"databundle":{"type":"databundle","databundleInfo":{"currentDatabundleVersionId":231965,"databundleType":"dataset","diffType":"unversioned","creationDate":"2018-11-04T22:11:50.0350813Z","creatorUserId":1942773,"removalDate":null,"currentGoodVersionKey":"eGPJ5NGY4TOcfHy1eCgO","lastestVersionKey":"eGPJ5NGY4TOcfHy1eCgO","versions":{"totalChildren":1,"count":0,"children":[]}},"datasetInfo":{"datasetId":73041,"datasetSlug":"/karangadiya/fifa19","isPrivate":false},"competitionInfo":null,"remoteDatasourceInfo":null,"bigqueryInfo":null,"githubInfo":null,"key":"mO7pb667eE4A7AP4npSx","path":"mO7pb667eE4A7AP4npSx","legacyEntityId":82572,"relativeUrl":"","name":"FIFA 19 complete player dataset","description":null},"databundleVersion":{"type":"databundleVersion","databundleVersionInfo":{"versionNumber":1,"versionNotes":"Fixed positions, added height and weight","creatorUserId":1942773,"creationDate":"2018-12-21T03:52:59.5708909Z","removalDate":null,"databundleVersionType":"fileset","objectTypeCount":{}},"datasetVersionInfo":{"datasetVersionId":220332},"statusInfo":{"status":"ready","statusMessage":"Ready","percentageCompleted":1.0},"exceptionInfo":{"criticalException":null,"warningExceptions":[]},"filesetInfo":{"totalSize":9140113,"downloadUrl":null,"directories":{"totalChildren":0,"count":0,"children":[]},"files":{"totalChildren":1,"count":0,"children":[]}},"originalCompressionInfo":null,"bundleCompressionInfo":{"filename":"archive.zip","fileExtension":".zip","fileSize":2281534,"contentEncoding":"application/zip","contentMd5":"qRYSPlVyLauucnqsk8RasQ==","archiveGcsUrl":"gs://kaggle-data-sets/73041/220332/bundle/archive.zip","creationLastUpdate":"2019-10-11T02:08:13.835925Z","creationPercentComplete":1.0},"bigquerySnapshotInfo":null,"storageInfo":{"uploadDataLocation":{"bucket":"kaggle-data-sets","path":"73041/220332/upload"},"rawDataLocation":{"bucket":"kagglesdsdata","path":"datasets/73041/220332"},"individualCompressedLocation":{"bucket":"kaggle-data-sets","path":"73041/220332/compressed"},"bundleArchiveLocation":{"bucket":"kaggle-data-sets","path":"73041/220332/bundle/archive.zip"},"fileSystemLocation":{"bucket":"kaggle-data-sources","path":"datasets/73041/220332/fs/embedded_fs"}},"fileSummaryInfo":{"totalFileCount":1,"fileTypes":[{"extension":".csv","fileCount":1,"totalSize":9140113}],"sampleFileNames":["data.csv"]},"columnSummaryInfo":{"totalColumnCount":89,"columnTypes":[{"columnType":"Integer","columnCount":43,"rowCount":782901},{"columnType":"String","columnCount":40,"rowCount":728280},{"columnType":"Url","columnCount":3,"rowCount":54621},{"columnType":"DateTime","columnCount":1,"rowCount":18207},{"columnType":"Boolean","columnCount":1,"rowCount":18207},{"columnType":"Id","columnCount":1,"rowCount":18207}],"sampleColumnNames":["Club","Potential","Overall","Flag","Nationality","Photo","Age","Name","ID",""]},"externalCopyInfo":{"externalCopies":[{"bucket":"kds-950edd66c5accf5528eb0a91efc6ad512ddfb279ceec86aff8d68afe","path":null,"region":"us-central1","lastCopied":"2020-08-04T04:27:37.6938471Z","status":"finished","lastUpdate":"2020-08-04T04:27:38.720792Z","percentFinished":1.0}]},"originalRemoteUrlInfo":null,"key":"eGPJ5NGY4TOcfHy1eCgO","path":"mO7pb667eE4A7AP4npSx/versions/eGPJ5NGY4TOcfHy1eCgO","legacyEntityId":231965,"relativeUrl":"","name":"Version 4","description":"Fixed positions, added height and weight"}},"isPrivate":false,"owner":{"id":1942773,"imageUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png","isOrganization":false,"name":"Karan Gadiya","profileUrl":"/karangadiya","slug":"karangadiya","maxFileSizeBytes":null,"userTier":"contributor","organizationMemberCount":null},"licenseGroups":[{"id":1,"name":"Creative Commons","licenses":[{"id":1,"name":"CC0: Public Domain","description":"CC0: Public Domain \u003ca href=\u0022https://creativecommons.org/publicdomain/zero/1.0/\u0022 target=\u0022_blank\u0022\u003e\u003cspan class=\u0022fa fa-info-circle\u0022/\u003e\u003c/a\u003e","url":"https://creativecommons.org/publicdomain/zero/1.0/","displaySequence":1},{"id":3,"name":"CC BY-NC-SA 4.0","description":"CC BY-NC-SA 4.0 \u003ca href=\u0022https://creativecommons.org/licenses/by-nc-sa/4.0/\u0022 target=\u0022_blank\u0022\u003e\u003cspan class=\u0022fa fa-info-circle\u0022/\u003e\u003c/a\u003e","url":"https://creativecommons.org/licenses/by-nc-sa/4.0/","displaySequence":2},{"id":8,"name":"CC BY-SA 4.0","description":"CC BY-SA 4.0 \u003ca href=\u0022https://creativecommons.org/licenses/by-sa/4.0/\u0022 target=\u0022_blank\u0022\u003e\u003cspan class=\u0022fa fa-info-circle\u0022/\u003e\u003c/a\u003e","url":"https://creativecommons.org/licenses/by-sa/4.0/","displaySequence":3},{"id":10,"name":"CC BY-SA 3.0","description":"CC BY-SA 3.0 \u003ca href=\u0022https://creativecommons.org/licenses/by-sa/3.0/\u0022 target=\u0022_blank\u0022\u003e\u003cspan class=\u0022fa fa-info-circle\u0022/\u003e\u003c/a\u003e","url":"https://creativecommons.org/licenses/by-sa/3.0/","displaySequence":4},{"id":13,"name":"Attribution 4.0 International (CC BY 4.0)","description":"CC-BY 4.0 \u003ca href=\u0022https://creativecommons.org/licenses/by/4.0/\u0022 target=\u0022_blank\u0022\u003e\u003cspan class=\u0022fa fa-info-circle\u0022/\u003e\u003c/a\u003e","url":"https://creativecommons.org/licenses/by/4.0/","displaySequence":5},{"id":14,"name":"Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)","description":"CC-BY-NC 4.0 \u003ca href=\u0022https://creativecommons.org/licenses/by-nc/4.0/\u0022 target=\u0022_blank\u0022\u003e\u003cspan class=\u0022fa fa-info-circle\u0022/\u003e\u003c/a\u003e","url":"https://creativecommons.org/licenses/by-nc/4.0/","displaySequence":6},{"id":16,"name":"Attribution 3.0 Unported (CC BY 3.0)","description":"CC BY 3.0 \u003ca href=\u0022https://creativecommons.org/licenses/by/3.0/\u0022 target=\u0022_blank\u0022\u003e\u003cspan class=\u0022fa fa-info-circle\u0022/\u003e\u003c/a\u003e","url":"https://creativecommons.org/licenses/by/3.0/","displaySequence":7},{"id":17,"name":"Attribution 3.0 IGO (CC BY 3.0 IGO)","description":"CC BY 3.0 IGO \u003ca href=\u0022https://creativecommons.org/licenses/by/3.0/igo/\u0022 target=\u0022_blank\u0022\u003e\u003cspan class=\u0022fa fa-info-circle\u0022/\u003e\u003c/a\u003e","url":"https://creativecommons.org/licenses/by/3.0/igo/","displaySequence":8},{"id":19,"name":"Attribution-NonCommercial-ShareAlike 3.0 IGO (CC BY-NC-SA 3.0 IGO)","description":"CC BY-NC-SA 3.0 IGO \u003ca href=\u0022https://creativecommons.org/licenses/by-nc-sa/3.0/igo/\u0022 target=\u0022_blank\u0022\u003e\u003cspan class=\u0022fa fa-info-circle\u0022/\u003e\u003c/a\u003e","url":"https://creativecommons.org/licenses/by-nc-sa/3.0/igo/","displaySequence":9},{"id":22,"name":"Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0)","description":"CC BY-ND 4.0 \u003ca href=\u0022https://creativecommons.org/licenses/by-nd/4.0/\u0022 target=\u0022_blank\u0022\u003e\u003cspan class=\u0022fa fa-info-circle\u0022/\u003e\u003c/a\u003e","url":"https://creativecommons.org/licenses/by-nd/4.0/","displaySequence":10},{"id":23,"name":"Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)","description":"CC BY-NC-ND 4.0 \u003ca href=\u0022https://creativecommons.org/licenses/by-nc-nd/4.0/\u0022 target=\u0022_blank\u0022\u003e\u003cspan class=\u0022fa fa-info-circle\u0022/\u003e\u003c/a\u003e","url":"https://creativecommons.org/licenses/by-nc-nd/4.0/","displaySequence":11}],"displaySequence":1},{"id":2,"name":"GPL","licenses":[{"id":9,"name":"GPL 2","description":"GPL 2 \u003ca href=\u0022http://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html\u0022 target=\u0022_blank\u0022\u003e\u003cspan class=\u0022fa fa-info-circle\u0022/\u003e\u003c/a\u003e","url":"http://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html","displaySequence":1},{"id":25,"name":"GNU Lesser General Public License 3.0","description":"LGPL 3.0 \u003ca href=\u0022http://www.gnu.org/licenses/lgpl-3.0.html\u0022 target=\u0022_blank\u0022\u003e\u003cspan class=\u0022fa fa-info-circle\u0022/\u003e\u003c/a\u003e","url":"http://www.gnu.org/licenses/lgpl-3.0.html","displaySequence":2},{"id":26,"name":"GNU Affero General Public License 3.0","description":"AGPL 3.0 \u003ca href=\u0022http://www.gnu.org/licenses/agpl-3.0.html\u0022 target=\u0022_blank\u0022\u003e\u003cspan class=\u0022fa fa-info-circle\u0022/\u003e\u003c/a\u003e","url":"http://www.gnu.org/licenses/agpl-3.0.html","displaySequence":3},{"id":27,"name":"GNU Free Documentation License 1.3","description":"FDL 1.3 \u003ca href=\u0022http://www.gnu.org/licenses/fdl-1.3.html\u0022 target=\u0022_blank\u0022\u003e\u003cspan class=\u0022fa fa-info-circle\u0022/\u003e\u003c/a\u003e","url":"http://www.gnu.org/licenses/fdl-1.3.html","displaySequence":4}],"displaySequence":2},{"id":3,"name":"Open Data Commons","licenses":[{"id":5,"name":"Database: Open Database, Contents: Database Contents","description":"Database: Open Database \u003ca href=\u0022http://opendatacommons.org/licenses/odbl/1.0/\u0022 target=\u0022_blank\u0022\u003e\u003cspan class=\u0022fa fa-info-circle\u0022/\u003e\u003c/a\u003e, Contents: Database Contents \u003ca href=\u0022http://opendatacommons.org/licenses/dbcl/1.0/\u0022 target=\u0022_blank\u0022\u003e\u003cspan class=\u0022fa fa-info-circle\u0022/\u003e\u003c/a\u003e","url":"http://opendatacommons.org/licenses/dbcl/1.0/","displaySequence":1},{"id":6,"name":"Database: Open Database, Contents: © Original Authors","description":"Database: Open Database \u003ca href=\u0022http://opendatacommons.org/licenses/odbl/1.0/\u0022 target=\u0022_blank\u0022\u003e\u003cspan class=\u0022fa fa-info-circle\u0022/\u003e\u003c/a\u003e, Contents: © Original Authors","url":"http://opendatacommons.org/licenses/odbl/1.0/","displaySequence":2},{"id":15,"name":"ODC Public Domain Dedication and Licence (PDDL)","description":"PDDL  \u003ca href=\u0022https://opendatacommons.org/licenses/pddl/1.0/\u0022 target=\u0022_blank\u0022\u003e\u003cspan class=\u0022fa fa-info-circle\u0022/\u003e\u003c/a\u003e","url":"https://opendatacommons.org/licenses/pddl/1.0/","displaySequence":3},{"id":24,"name":"ODC Attribution License (ODC-By)","description":"ODC-BY 1.0 \u003ca href=\u0022https://opendatacommons.org/licenses/by/1-0/index.html\u0022 target=\u0022_blank\u0022\u003e\u003cspan class=\u0022fa fa-info-circle\u0022/\u003e\u003c/a\u003e","url":"https://opendatacommons.org/licenses/by/1-0/index.html","displaySequence":4}],"displaySequence":3},{"id":6,"name":"Community Data License","licenses":[{"id":20,"name":"Community Data License Agreement - Permissive - Version 1.0","description":"CDLA Permissive 1.0 \u003ca href=\u0022https://cdla.io/permissive-1-0/\u0022 target=\u0022_blank\u0022\u003e\u003cspan class=\u0022fa fa-info-circle\u0022/\u003e\u003c/a\u003e","url":"https://cdla.io/permissive-1-0/","displaySequence":1},{"id":21,"name":"Community Data License Agreement - Sharing - Version 1.0","description":"CDLA Sharing 1.0 \u003ca href=\u0022https://cdla.io/sharing-1-0/\u0022 target=\u0022_blank\u0022\u003e\u003cspan class=\u0022fa fa-info-circle\u0022/\u003e\u003c/a\u003e","url":"https://cdla.io/sharing-1-0/","displaySequence":2}],"displaySequence":4},{"id":4,"name":"Special","licenses":[{"id":7,"name":"World Bank Dataset Terms of Use","description":"World Bank Dataset Terms of Use \u003ca href=\u0022https://www.worldbank.org/en/about/legal/terms-of-use-for-datasets\u0022 target=\u0022_blank\u0022\u003e\u003cspan class=\u0022fa fa-info-circle\u0022/\u003e\u003c/a\u003e","url":"https://www.worldbank.org/en/about/legal/terms-of-use-for-datasets","displaySequence":1},{"id":2,"name":"Reddit API Terms","description":"Reddit API Terms \u003ca href=\u0022https://www.reddit.com/wiki/api\u0022 target=\u0022_blank\u0022\u003e\u003cspan class=\u0022fa fa-info-circle\u0022/\u003e\u003c/a\u003e","url":"https://www.reddit.com/wiki/api","displaySequence":2},{"id":18,"name":"U.S. Government Works","description":"U.S. Government Works \u003ca href=\u0022https://www.usa.gov/government-works/\u0022 target=\u0022_blank\u0022\u003e\u003cspan class=\u0022fa fa-info-circle\u0022/\u003e\u003c/a\u003e","url":"https://www.usa.gov/government-works/","displaySequence":3},{"id":28,"name":"EU ODP Legal Notice","description":"EU ODP Legal Notice \u003ca href=\u0022https://ec.europa.eu/info/legal-notice_en\u0022 target=\u0022_blank\u0022\u003e\u003cspan class=\u0022fa fa-info-circle\u0022/\u003e\u003c/a\u003e","url":"https://ec.europa.eu/info/legal-notice_en","displaySequence":4}],"displaySequence":5},{"id":5,"name":"Other","licenses":[{"id":11,"name":"Data files © Original Authors","description":"Data files © Original Authors","url":null,"displaySequence":1},{"id":12,"name":"Other (specified in description)","description":"Other (specified in description)","url":null,"displaySequence":2},{"id":4,"name":"Unknown","description":"Unknown","url":null,"displaySequence":3}],"displaySequence":6}],"owners":[{"id":9221144,"imageUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png","isOrganization":false,"name":"Muhammad Mudassir5","profileUrl":"/muhammadmudassir5","slug":"muhammadmudassir5","maxFileSizeBytes":null,"userTier":"novice","organizationMemberCount":null},{"id":1942773,"imageUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png","isOrganization":false,"name":"Karan Gadiya","profileUrl":"/karangadiya","slug":"karangadiya","maxFileSizeBytes":null,"userTier":"contributor","organizationMemberCount":null}],"overview":"18k+ FIFA 19 players, ~90 attributes extracted from the latest FIFA database","description":"### Context\n\nFootball analytics\n\n\n### Content\n\nDetailed attributes for every player registered in the latest edition of FIFA 19 database.\nScraping code at GitHub repo: https://github.com/amanthedorkknight/fifa18-all-player-statistics/tree/master/2019\n\n\n### Acknowledgements\n\nData scraped from https://sofifa.com/\n\n\n### Inspiration\n\nInspired from this dataset: https://www.kaggle.com/thec03u5/fifa-18-demo-player-dataset","datasetId":73041,"isRemoved":false,"isVersionRemoved":false,"datasetVersionId":220332,"datasetVersionNumber":4,"lastVersionNumber":4,"datasetUrl":"/karangadiya/fifa19","datasetExternalUrl":"https://kaggle.com/karangadiya/fifa19","originalImageUrl":"https://storage.googleapis.com/kaggle-datasets-images/73041/162580/a17bc456289e382192bebd8bb595719d/data-original.jpg?t=2018-11-04-22-19-55","coverImageUrl":"https://storage.googleapis.com/kaggle-datasets-images/73041/162580/a17bc456289e382192bebd8bb595719d/dataset-cover.jpg?t=2018-11-04-22-19-55","cardImageUrl":"https://storage.googleapis.com/kaggle-datasets-images/73041/162580/a17bc456289e382192bebd8bb595719d/dataset-card.jpg?t=2018-11-04-22-19-55","thumbnailImageUrl":"https://storage.googleapis.com/kaggle-datasets-images/73041/162580/a17bc456289e382192bebd8bb595719d/dataset-thumbnail.jpg?t=2018-11-04-22-19-55","license":{"id":3,"name":"CC BY-NC-SA 4.0","description":"CC BY-NC-SA 4.0 \u003ca href=\u0022https://creativecommons.org/licenses/by-nc-sa/4.0/\u0022 target=\u0022_blank\u0022\u003e\u003cspan class=\u0022fa fa-info-circle\u0022/\u003e\u003c/a\u003e","url":"https://creativecommons.org/licenses/by-nc-sa/4.0/","displaySequence":null},"voteCount":3773,"creatorUserId":1942773,"creatorDisplayName":"Karan Gadiya","ownerTwitter":null,"lastUpdated":"2018-12-21T03:52:59.587Z","downloadUrl":"/karangadiya/fifa19/download","newNotebookUrl":"code/scripts/new?datasetVersionId=220332","newScriptUrl":"code/scripts/new?datasetVersionId=220332","hasAlreadyVotedUp":false,"isOldDatasetVersion":false,"numberOfViews":840701,"numberOfDownloads":134336,"numberOfScripts":601,"numberOfTopics":35,"numberOfTasks":27,"canEdit":false,"canPerformOwnerTasks":false,"canEditSlug":false,"canEditPublishStatus":false,"canEditDescription":false,"hideVersionStatuses":true,"cardImageLeft":675,"cardImageTop":0,"cardImageWidth":1079,"cardImageHeight":1079,"coverImageLeft":3,"coverImageTop":326,"coverImageWidth":1916,"coverImageHeight":403,"datasetVersions":[{"id":220332,"slug":"fifa19","name":"FIFA 19 complete player dataset","creationDate":"2018-12-21T03:52:59.587Z","versionNumber":4,"versionNotes":"Fixed positions, added height and weight","thumbnailImageUrl":"https://storage.googleapis.com/kaggle-datasets-images/73041/162580/a17bc456289e382192bebd8bb595719d/dataset-thumbnail.jpg?t=2018-11-04-22-19-55","datasetVersionUrl":"/karangadiya/fifa19/version/4","status":"ready","userMessage":null,"isRemoved":false,"creator":{"id":1942773,"imageUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png","isOrganization":false,"name":"Karan Gadiya","profileUrl":"/karangadiya","slug":"karangadiya","maxFileSizeBytes":null,"userTier":"novice","organizationMemberCount":null},"userSpecifiedSources":"https://sofifa.com","doi":null,"databundleVersionId":231965},{"id":166280,"slug":"fifa19","name":"FIFA 19 complete player dataset","creationDate":"2018-11-07T02:12:09.31Z","versionNumber":3,"versionNotes":"removed duplicate IDs, fixed some positions","thumbnailImageUrl":"https://storage.googleapis.com/kaggle-datasets-images/73041/162580/a17bc456289e382192bebd8bb595719d/dataset-thumbnail.jpg?t=2018-11-04-22-19-55","datasetVersionUrl":"/karangadiya/fifa19/version/3","status":"ready","userMessage":null,"isRemoved":false,"creator":{"id":1942773,"imageUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png","isOrganization":false,"name":"Karan Gadiya","profileUrl":"/karangadiya","slug":"karangadiya","maxFileSizeBytes":null,"userTier":"novice","organizationMemberCount":null},"userSpecifiedSources":null,"doi":null,"databundleVersionId":176785},{"id":162837,"slug":"fifa19","name":"FIFA 19 complete player dataset","creationDate":"2018-11-05T01:47:54.613Z","versionNumber":2,"versionNotes":"added more players","thumbnailImageUrl":"https://storage.googleapis.com/kaggle-datasets-images/73041/162580/a17bc456289e382192bebd8bb595719d/dataset-thumbnail.jpg?t=2018-11-04-22-19-55","datasetVersionUrl":"/karangadiya/fifa19/version/2","status":"ready","userMessage":null,"isRemoved":false,"creator":{"id":1942773,"imageUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png","isOrganization":false,"name":"Karan Gadiya","profileUrl":"/karangadiya","slug":"karangadiya","maxFileSizeBytes":null,"userTier":"novice","organizationMemberCount":null},"userSpecifiedSources":null,"doi":null,"databundleVersionId":173263},{"id":162580,"slug":"fifa19","name":"FIFA 19 complete player dataset","creationDate":"2018-11-04T22:11:52.02Z","versionNumber":1,"versionNotes":"Initial release","thumbnailImageUrl":"https://storage.googleapis.com/kaggle-datasets-images/73041/162580/a17bc456289e382192bebd8bb595719d/dataset-thumbnail.jpg?t=2018-11-04-22-19-55","datasetVersionUrl":"/karangadiya/fifa19/version/1","status":"ready","userMessage":null,"isRemoved":false,"creator":{"id":1942773,"imageUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png","isOrganization":false,"name":"Karan Gadiya","profileUrl":"/karangadiya","slug":"karangadiya","maxFileSizeBytes":null,"userTier":"novice","organizationMemberCount":null},"userSpecifiedSources":null,"doi":null,"databundleVersionId":173004}],"datasetVersionTotalCount":4,"feed":[],"topicId":null,"isNewTopic":false,"canSeeDeletionButton":false,"checklistDismissed":false,"type":"fileset","diffType":"unversioned","checklistCollapsed":false,"isInFlight":false,"maintainerOrganization":null,"createdByKernel":null,"usabilityRating":{"score":1.0,"columnDescriptionScore":1.0,"coverImageScore":1.0,"fileDescriptionScore":1.0,"fileFormatScore":1.0,"licenseScore":1.0,"overviewScore":1.0,"provenanceScore":1.0,"publicKernelScore":1.0,"subtitleScore":1.0,"tagScore":1.0,"updateFrequencyScore":1.0},"bookmarked":false,"discussion":{"canDownvote":false,"dataUrl":"/forums/82210/topics.json","id":82210,"showSubscribeButton":false,"isSubscribed":false,"subscription":"unsubscribe","paramValues":{"page":1,"search":null,"group":"all","sortBy":"hot","category":"all"}},"currentTab":"data","newTopic":{"allowAttachments":false,"authorTier":"novice","authorType":"topic","forumId":82210,"parentName":"FIFA 19 complete player dataset","parentUrl":"/karangadiya/fifa19/discussion","isPrivate":false},"categories":{"tags":[{"id":4141,"name":"sports","fullPath":"subject \u003e health and fitness \u003e exercise \u003e sports","listingUrl":"/datasets?group=public\u0026tagids=4141","description":"The sports tag covers the whole spectrum of sports around the world. We\u0027ve got tennis, we\u0027ve got football, and we\u0027ve even got kitefoil racing.","datasetCount":2966,"competitionCount":15,"notebookCount":2944,"tagUrl":"/tags/sports","displayName":"Sports","fontAwesomeIcon":""},{"id":13208,"name":"data visualization","fullPath":"technique \u003e data visualization","listingUrl":"/datasets?group=public\u0026tagids=13208","description":"The art of depicting data in a visual format. Using charts and graphs, it is easier to observe patterns, relationships, and outliers.","datasetCount":1526,"competitionCount":0,"notebookCount":23433,"tagUrl":"/tags/data-visualization","displayName":"Data Visualization","fontAwesomeIcon":""},{"id":2603,"name":"football","fullPath":"subject \u003e health and fitness \u003e exercise \u003e sports \u003e football","listingUrl":"/datasets?group=public\u0026tagids=2603","description":"Some call it association football, some call it soccer, most call it sport ball. Come analyze the teams and players of the beautiful game.","datasetCount":1312,"competitionCount":5,"notebookCount":675,"tagUrl":"/tags/association-football","displayName":"Football","fontAwesomeIcon":""},{"id":13306,"name":"feature engineering","fullPath":"technique \u003e feature engineering","listingUrl":"/datasets?group=public\u0026tagids=13306","description":null,"datasetCount":217,"competitionCount":0,"notebookCount":6343,"tagUrl":"/tags/feature-engineering","displayName":"Feature Engineering","fontAwesomeIcon":""},{"id":13402,"name":"random forest","fullPath":"technique \u003e random forest","listingUrl":"/datasets?group=public\u0026tagids=13402","description":null,"datasetCount":89,"competitionCount":0,"notebookCount":4399,"tagUrl":"/tags/random-forest","displayName":"Random Forest","fontAwesomeIcon":""}],"type":"dataset"},"upvoteSuggestion":{"voteCount":3773,"medalVoteCount":499,"upVoters":[{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/1056223-kg.JPG","displayName":"Ekrem Bayar","profileUrl":"/ekrembayar","tier":"grandmaster","tierInt":4,"userId":1056223,"userName":"ekrembayar"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/1245336-kg.jpg","displayName":"Janio Martinez Bachmann","profileUrl":"/janiobachmann","tier":"grandmaster","tierInt":4,"userId":1245336,"userName":"janiobachmann"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/1351163-kg.jpeg","displayName":"Tarun Paparaju","profileUrl":"/tarunpaparaju","tier":"grandmaster","tierInt":4,"userId":1351163,"userName":"tarunpaparaju"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/1798416-gp.jpg","displayName":"Vitalii Mokin","profileUrl":"/vbmokin","tier":"grandmaster","tierInt":4,"userId":1798416,"userName":"vbmokin"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/1920818-kg.JPG","displayName":"Prashant Banerjee","profileUrl":"/prashant111","tier":"grandmaster","tierInt":4,"userId":1920818,"userName":"prashant111"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/1727329-kg.png","displayName":"Yeonjun In","profileUrl":"/mbnb8317","tier":"master","tierInt":3,"userId":1727329,"userName":"mbnb8317"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png","displayName":"Dimosthenis Karaflos","profileUrl":"/dkaraflos","tier":"master","tierInt":3,"userId":1733855,"userName":"dkaraflos"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/2357264-kg.jpg","displayName":"PAVAN KUMAR D","profileUrl":"/mragpavank","tier":"master","tierInt":3,"userId":2357264,"userName":"mragpavank"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/2591653-kg.png","displayName":"Abhinand","profileUrl":"/abhinand05","tier":"master","tierInt":3,"userId":2591653,"userName":"abhinand05"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/859104-kg.jpg","displayName":"NowYSM","profileUrl":"/ashishpatel26","tier":"master","tierInt":3,"userId":859104,"userName":"ashishpatel26"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/998023-gp.jpg","displayName":"Timo Bozsolik","profileUrl":"/timoboz","tier":"master","tierInt":3,"userId":998023,"userName":"timoboz"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/944350-kg.PNG","displayName":"Vincent Lugat","profileUrl":"/vincentlugat","tier":"master","tierInt":3,"userId":944350,"userName":"vincentlugat"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/949803-kg.jpg","displayName":"Arunkumar Venkataramanan","profileUrl":"/arunkumarramanan","tier":"master","tierInt":3,"userId":949803,"userName":"arunkumarramanan"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/1080185-kg.jpg","displayName":"JasonZivkovic","profileUrl":"/jaseziv83","tier":"master","tierInt":3,"userId":1080185,"userName":"jaseziv83"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/103225-kg.jpg","displayName":"Bukun","profileUrl":"/ambarish","tier":"master","tierInt":3,"userId":103225,"userName":"ambarish"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/848555-kg.png","displayName":"Ouassim Adnane","profileUrl":"/ishivinal","tier":"master","tierInt":3,"userId":848555,"userName":"ishivinal"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/4182566-kg.png","displayName":"Aayush Mishra","profileUrl":"/aayushmishra1512","tier":"master","tierInt":3,"userId":4182566,"userName":"aayushmishra1512"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/4615465-kg.jpg","displayName":"Paramartha Sengupta","profileUrl":"/paramarthasengupta","tier":"master","tierInt":3,"userId":4615465,"userName":"paramarthasengupta"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/4962648-kg.jpg","displayName":"Nitesh Yadav","profileUrl":"/niteshyadav3103","tier":"master","tierInt":3,"userId":4962648,"userName":"niteshyadav3103"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/7192361-kg.jpeg","displayName":"Aryan Tiwari","profileUrl":"/aryantiwari123","tier":"master","tierInt":3,"userId":7192361,"userName":"aryantiwari123"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/6125196-kg.jpeg","displayName":"Halime Doğan","profileUrl":"/halimedogan","tier":"master","tierInt":3,"userId":6125196,"userName":"halimedogan"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/3270621-fb.jpg","displayName":"Utku_Kubilay","profileUrl":"/utkukubilay","tier":"master","tierInt":3,"userId":3270621,"userName":"utkukubilay"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/3449343-kg.JPG","displayName":"Chirag Samal","profileUrl":"/chirag9073","tier":"master","tierInt":3,"userId":3449343,"userName":"chirag9073"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/3773993-kg.jpg","displayName":"Naim Mhedhbi","profileUrl":"/naim99","tier":"master","tierInt":3,"userId":3773993,"userName":"naim99"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/3749463-kg.png","displayName":"Ömercan Savgan","profileUrl":"/omercansvgn","tier":"expert","tierInt":2,"userId":3749463,"userName":"omercansvgn"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/3684937-kg.jpeg","displayName":"Amol Ambkar","profileUrl":"/amolambkar","tier":"expert","tierInt":2,"userId":3684937,"userName":"amolambkar"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/3585446-kg.jpg","displayName":"Jonas Neri","profileUrl":"/jonaslneri","tier":"expert","tierInt":2,"userId":3585446,"userName":"jonaslneri"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/3400476-kg.jpg","displayName":"Vishak Nair","profileUrl":"/vishynair","tier":"expert","tierInt":2,"userId":3400476,"userName":"vishynair"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/3377161-kg.png","displayName":"Slash","profileUrl":"/shashwat1001","tier":"expert","tierInt":2,"userId":3377161,"userName":"shashwat1001"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/3389856-kg.jpg","displayName":"Ishan Kotian","profileUrl":"/lykin22","tier":"expert","tierInt":2,"userId":3389856,"userName":"lykin22"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/3486296-kg.png","displayName":"dasmehdixtr","profileUrl":"/dasmehdixtr","tier":"expert","tierInt":2,"userId":3486296,"userName":"dasmehdixtr"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/6188271-kg.png","displayName":"Mohamed Elsayed","profileUrl":"/mhmdsyed","tier":"expert","tierInt":2,"userId":6188271,"userName":"mhmdsyed"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/6001381-kg.jpg","displayName":"HammadAsif","profileUrl":"/hammad40241","tier":"expert","tierInt":2,"userId":6001381,"userName":"hammad40241"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/3293980-kg.png","displayName":"Muhammad Ayman","profileUrl":"/muhammadayman","tier":"expert","tierInt":2,"userId":3293980,"userName":"muhammadayman"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/3077375-kg.jpg","displayName":"Abu Noman Md. Sakib","profileUrl":"/anmspro","tier":"expert","tierInt":2,"userId":3077375,"userName":"anmspro"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/3088399-kg.jpeg","displayName":"Pradyut Lohani","profileUrl":"/pradyut23","tier":"expert","tierInt":2,"userId":3088399,"userName":"pradyut23"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/3197002-kg.jpg","displayName":"Nikit Periwal","profileUrl":"/stoicstatic","tier":"expert","tierInt":2,"userId":3197002,"userName":"stoicstatic"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/6761385-kg.jpg","displayName":"Binu Thomas Philip","profileUrl":"/binuthomasphilip","tier":"expert","tierInt":2,"userId":6761385,"userName":"binuthomasphilip"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/5090420-kg.jpg","displayName":"Kushagra Singh","profileUrl":"/perkymaster","tier":"expert","tierInt":2,"userId":5090420,"userName":"perkymaster"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/5175856-kg.png","displayName":"Louis-C7","profileUrl":"/louischen7","tier":"expert","tierInt":2,"userId":5175856,"userName":"louischen7"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/5190985-kg.jpg","displayName":"Pratik Barua","profileUrl":"/pratikbarua","tier":"expert","tierInt":2,"userId":5190985,"userName":"pratikbarua"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/5342793-kg.JPG","displayName":"Gökalp Olukcu","profileUrl":"/gkalpolukcu","tier":"expert","tierInt":2,"userId":5342793,"userName":"gkalpolukcu"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/5404173-kg.jpg","displayName":"Vishal Agarwal","profileUrl":"/agarwalvishal00","tier":"expert","tierInt":2,"userId":5404173,"userName":"agarwalvishal00"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/5488513-kg.jpg","displayName":"samsatp","profileUrl":"/sathianpong","tier":"expert","tierInt":2,"userId":5488513,"userName":"sathianpong"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/5541260-kg.JPG","displayName":"aditiani","profileUrl":"/aditiani","tier":"expert","tierInt":2,"userId":5541260,"userName":"aditiani"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/5563360-kg.jpg","displayName":"Anindita Karmakar","profileUrl":"/aninditakarmakar","tier":"expert","tierInt":2,"userId":5563360,"userName":"aninditakarmakar"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/5663726-kg.png","displayName":"Lázaro","profileUrl":"/lazaro97","tier":"expert","tierInt":2,"userId":5663726,"userName":"lazaro97"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/5665381-kg.jpg","displayName":"Ashaab Rizvi","profileUrl":"/ashaabrizvi","tier":"expert","tierInt":2,"userId":5665381,"userName":"ashaabrizvi"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/6272274-kg.jpg","displayName":"Rishi Patel","profileUrl":"/patelris","tier":"expert","tierInt":2,"userId":6272274,"userName":"patelris"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/6279218-kg.jpg","displayName":"Ram Jas Maurya","profileUrl":"/ramjasmaurya","tier":"expert","tierInt":2,"userId":6279218,"userName":"ramjasmaurya"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/6555089-kg.jpeg","displayName":"Austin Pack","profileUrl":"/austinpack","tier":"expert","tierInt":2,"userId":6555089,"userName":"austinpack"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png","displayName":"Salih Albayrak","profileUrl":"/mrhippo","tier":"expert","tierInt":2,"userId":4673305,"userName":"mrhippo"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/4894234-kg.jpeg","displayName":"ÜNAL KÖROĞLU","profileUrl":"/nalkrolu","tier":"expert","tierInt":2,"userId":4894234,"userName":"nalkrolu"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/4922661-kg.jpg","displayName":"Artem Kostrikin","profileUrl":"/artemkostrikin","tier":"expert","tierInt":2,"userId":4922661,"userName":"artemkostrikin"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/5007869-kg.jpg","displayName":"Vadim Timakin","profileUrl":"/vadimtimakin","tier":"expert","tierInt":2,"userId":5007869,"userName":"vadimtimakin"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/3287-gr.jpg","displayName":"joaquín armando","profileUrl":"/jbm1966","tier":"expert","tierInt":2,"userId":3287,"userName":"jbm1966"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/4695459-kg.png","displayName":"Himanshu","profileUrl":"/himanshu007121","tier":"expert","tierInt":2,"userId":4695459,"userName":"himanshu007121"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/4706661-kg.jpg","displayName":"Taha07","profileUrl":"/taha07","tier":"expert","tierInt":2,"userId":4706661,"userName":"taha07"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/4755678-kg.jpeg","displayName":"Arindam Baruah","profileUrl":"/arindambaruah","tier":"expert","tierInt":2,"userId":4755678,"userName":"arindambaruah"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/4196226-kg.png","displayName":"aman2000jaiswal","profileUrl":"/aman2000jaiswal","tier":"expert","tierInt":2,"userId":4196226,"userName":"aman2000jaiswal"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/4359632-kg.jpg","displayName":"Atharva Ingle","profileUrl":"/atharvaingle","tier":"expert","tierInt":2,"userId":4359632,"userName":"atharvaingle"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/4521496-kg.jpg","displayName":"Ada Kibet","profileUrl":"/adakibet","tier":"expert","tierInt":2,"userId":4521496,"userName":"adakibet"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/3912794-kg.jpg","displayName":"Taner Sekmen","profileUrl":"/tanersekmen","tier":"expert","tierInt":2,"userId":3912794,"userName":"tanersekmen"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/3918727-kg.png","displayName":"RachidYZ","profileUrl":"/rachidyz","tier":"expert","tierInt":2,"userId":3918727,"userName":"rachidyz"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/3793058-kg.png","displayName":"Monika Panfil","profileUrl":"/mpanfil","tier":"expert","tierInt":2,"userId":3793058,"userName":"mpanfil"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/3888079-kg.jpeg","displayName":"Turhan Can Kargin","profileUrl":"/turhancankargin","tier":"expert","tierInt":2,"userId":3888079,"userName":"turhancankargin"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/4177075-kg.jpg","displayName":"Erik ","profileUrl":"/erikcabeza","tier":"expert","tierInt":2,"userId":4177075,"userName":"erikcabeza"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/815147-kg.jpg","displayName":"Sandeep Kumar","profileUrl":"/sandeepkumar121995","tier":"expert","tierInt":2,"userId":815147,"userName":"sandeepkumar121995"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/4949147-kg.jpg","displayName":"Vishnu Varthan Rao","profileUrl":"/vishnuvarthanrao","tier":"expert","tierInt":2,"userId":4949147,"userName":"vishnuvarthanrao"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/3406741-kg.jpg","displayName":"Debjyoti Banerjee","profileUrl":"/jl18pg052","tier":"expert","tierInt":2,"userId":3406741,"userName":"jl18pg052"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/85209-fb.jpg","displayName":"Robin East","profileUrl":"/robineast","tier":"expert","tierInt":2,"userId":85209,"userName":"robineast"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/109123-gr.jpg","displayName":"Dan Ofer","profileUrl":"/danofer","tier":"expert","tierInt":2,"userId":109123,"userName":"danofer"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/274731-kg.jpeg","displayName":"Endi Niu","profileUrl":"/niuddd","tier":"expert","tierInt":2,"userId":274731,"userName":"niuddd"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/278651-gr.jpg","displayName":"Soumitra Agarwal","profileUrl":"/artimous","tier":"expert","tierInt":2,"userId":278651,"userName":"artimous"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/323048-kg.jpeg","displayName":"AR","profileUrl":"/akashram","tier":"expert","tierInt":2,"userId":323048,"userName":"akashram"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/900006-kg.jpg","displayName":"Ritesh Saluja","profileUrl":"/ritesaluja","tier":"expert","tierInt":2,"userId":900006,"userName":"ritesaluja"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/1043614-kg.jpeg","displayName":"YeongHyeon","profileUrl":"/yeonghyeon","tier":"expert","tierInt":2,"userId":1043614,"userName":"yeonghyeon"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/1168459-kg.jpg","displayName":"Rohit Midha","profileUrl":"/rohitmidha23","tier":"expert","tierInt":2,"userId":1168459,"userName":"rohitmidha23"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/1376846-kg.jpg","displayName":"meet_your_maker","profileUrl":"/leafar","tier":"expert","tierInt":2,"userId":1376846,"userName":"leafar"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/2604006-kg.jpg","displayName":"Mariusz Bronowicki","profileUrl":"/godzill22","tier":"expert","tierInt":2,"userId":2604006,"userName":"godzill22"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/2608370-kg.jpg","displayName":"Ahmed Mohamed","profileUrl":"/ahmedsmara","tier":"expert","tierInt":2,"userId":2608370,"userName":"ahmedsmara"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/2290703-fb.jpg","displayName":"Pierre Brunello","profileUrl":"/pierreb1105","tier":"expert","tierInt":2,"userId":2290703,"userName":"pierreb1105"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/2513130-kg.png","displayName":"fwj7","profileUrl":"/fangwenjun","tier":"expert","tierInt":2,"userId":2513130,"userName":"fangwenjun"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/2426643-kg.jpg","displayName":"Abhijith Chandra Das","profileUrl":"/abhijithchandradas","tier":"expert","tierInt":2,"userId":2426643,"userName":"abhijithchandradas"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/2629319-kg.jpg","displayName":"SeungWon Kim","profileUrl":"/possiblemanjr","tier":"expert","tierInt":2,"userId":2629319,"userName":"possiblemanjr"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/2654279-kg.jpg","displayName":"Akhilesh","profileUrl":"/akhileshrai","tier":"expert","tierInt":2,"userId":2654279,"userName":"akhileshrai"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/2660090-kg.jpg","displayName":"Amit Hasan Shuvo","profileUrl":"/amithasanshuvo","tier":"expert","tierInt":2,"userId":2660090,"userName":"amithasanshuvo"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/2686945-kg.jpg","displayName":"SIDDHARTH M","profileUrl":"/siddharthm1698","tier":"expert","tierInt":2,"userId":2686945,"userName":"siddharthm1698"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/2815958-kg.jpeg","displayName":"datartist","profileUrl":"/kimjihoo","tier":"expert","tierInt":2,"userId":2815958,"userName":"kimjihoo"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/2817681-kg.jpeg","displayName":"Pawandeep Singh","profileUrl":"/iluvmahheart","tier":"expert","tierInt":2,"userId":2817681,"userName":"iluvmahheart"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/2837140-gr.jpg","displayName":"Jaseem C K","profileUrl":"/jaseemck","tier":"expert","tierInt":2,"userId":2837140,"userName":"jaseemck"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/2889731-kg.jpg","displayName":"Vaibhav Saxena","profileUrl":"/vaibhavsxn","tier":"expert","tierInt":2,"userId":2889731,"userName":"vaibhavsxn"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/2931338-kg.jpg","displayName":"devrishi","profileUrl":"/devvret","tier":"expert","tierInt":2,"userId":2931338,"userName":"devvret"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/1539724-kg.jpg","displayName":"SDSTony","profileUrl":"/jiny333","tier":"expert","tierInt":2,"userId":1539724,"userName":"jiny333"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/1208118-gr.jpg","displayName":"Vishal Sharma","profileUrl":"/daftintrovert","tier":"expert","tierInt":2,"userId":1208118,"userName":"daftintrovert"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/1715390-kg.jpg","displayName":"Balraj Ashwath","profileUrl":"/balraj98","tier":"expert","tierInt":2,"userId":1715390,"userName":"balraj98"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/1844214-kg.jpg","displayName":"Kushal Mahindrakar","profileUrl":"/kushal1996","tier":"expert","tierInt":2,"userId":1844214,"userName":"kushal1996"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/1398311-kg.jpg","displayName":"Alex Kaechele","profileUrl":"/alexkaechele","tier":"expert","tierInt":2,"userId":1398311,"userName":"alexkaechele"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/1421155-kg.jpg","displayName":"Cedric Damien","profileUrl":"/cedricdamien","tier":"expert","tierInt":2,"userId":1421155,"userName":"cedricdamien"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/1567578-kg.jpg","displayName":"Ragnar","profileUrl":"/rowhitswami","tier":"expert","tierInt":2,"userId":1567578,"userName":"rowhitswami"}]},"readerGroupId":null,"writerGroupId":null,"collaborators":{"owner":{"isUser":true,"isGroup":false,"userId":1942773,"groupId":null,"groupMemberCount":null,"profileUrl":"/karangadiya","thumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png","name":"Karan Gadiya","slug":"karangadiya","userTier":"contributor","joinDate":null,"type":"owner"},"collaborators":[]},"isCollaborator":false,"deletionNeedsReview":false,"hasDatasetDoiApproved":false,"canSeeConfigAsCode":true,"canCreateDatasetTasks":false,"blockTaskCreation":false,"canSeeDatasetHashLink":true,"medalUrl":"/static/images/medals/datasets/goldl@2x.png","datasetHashLink":null,"@wf": "Datasets.DatasetDtoWireFormat"});performance && performance.mark && performance.mark("DatasetContainer.componentCouldBootstrap");</script><script nonce="" type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+    "HTML-CSS": {
+    preferredFont: "TeX",
+    availableFonts: ["STIX", "TeX"],
+    linebreaks: {
+    automatic: true
+    },
+    EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50)
+    },
+    tex2jax: {
+    inlineMath: [["\\(", "\\)"], ["\\\\(", "\\\\)"]],
+    displayMath: [["$$", "$$"], ["\\[", "\\]"]],
+    processEscapes: true,
+    ignoreClass: "tex2jax_ignore|dno"
+    },
+    TeX: {
+    noUndefined: {
+    attributes: {
+    mathcolor: "red",
+    mathbackground: "#FFEEEE",
+    mathsize: "90%"
+    }
+    }
+    },
+    Macros: {
+    href: "{}"
+    },
+    skipStartupTypeset: true,
+    messageStyle: "none",
+    extensions: [],
+    });
+</script>
+<script type="text/javascript" nonce="">
+  window.addEventListener("DOMContentLoaded", () => {
+    const head = document.getElementsByTagName("head")[0];
+    const useProdHosts = ["www.kaggle.com", "admin.kaggle.com"];
+    const subdomain = useProdHosts.includes(window.location.hostname) ? "www" : "staging";
+
+    const lib = document.createElement("script");
+    lib.type = "text/javascript";
+    lib.src = `https://${subdomain}.kaggleusercontent.com/static/mathjax/2.7.9/MathJax.js?config=TeX-AMS-MML_HTMLorMML`;
+    head.appendChild(lib);
+  });
+</script>
+
+
+</div><div data-testid="dataset-detail-render-tid" class="sc-jjdfFS Lvtnp"><div class="dataset-header-v2__container"><div class="pageheader"><div class="pageheader__container dataset-header-v2"><div id="dataset-header" class="dataset-header-v2__top"><div class="dataset-header-v2__top-image-container"><img src="./FIFA 19 complete player dataset _ Kaggle_files/dataset-cover.jpg" class="sc-hzYkKa bTqMva"></div><div class="pageheader__top--safe" id="pageheader__top--safe--datasets"><div class="sc-ihgLnJ jsJhpK"><img src="./FIFA 19 complete player dataset _ Kaggle_files/goldl@2x.png" alt="medal" class="sc-cwNgUR fYcxlj"><span class="sc-kuXGTY fIDaoQ"><div class="vote-button__container "><div class="vote-button vote-button--compact vote-button--enabled"><div role="button" class="vote-button__button vote-button__button--up vb-upvote"><span class="fa fa-angle-up"></span></div><div class="vote-button__button vote-button__button--up vote-button__vote-count-container" style="padding: 0px;"><span role="button" class="vote-button__vote-count" style="padding: 10px 16px 12px;">3773</span></div><div class="vote-button__button-placeholder"></div></div></div></span></div><div class="dataset-header-v2__classification"><p class="dataset-header-v2__classification-text"><span class="dataset-header-v2__classification-classification"><span class="fa-stack dataset-header-v2__classification-text-icon"><i class="fa fa-circle-thin fa-stack-2x"></i><i class="fa fa-cube fa-stack-1x"></i></span>&nbsp;  Dataset</span></p></div><div class="dataset-header-v2__info"><h1 class="dataset-header-v2__title">FIFA 19 complete player dataset</h1><h2 class="dataset-header-v2__subtitle">18k+ FIFA 19 players, ~90 attributes extracted from the latest FIFA database</h2></div><div class="dataset-header-v2__details"><div class="dataset-header-v2__collaborators-wrapper"><a href="https://www.kaggle.com/karangadiya" class="dataset-header-v2__owner-name"><img class="dataset-header-v2__owner-thumbnail" src="./FIFA 19 complete player dataset _ Kaggle_files/default-thumb.png" alt="" role="presentation"><span>Karan Gadiya</span></a></div><time datetime="Fri Dec 21 2018 08:52:59 GMT+0500 (Pakistan Standard Time)" title="Fri Dec 21 2018 08:52:59 GMT+0500 (Pakistan Standard Time)"><span><span class="dataset-header-v2__meta-bullet">&nbsp;• &nbsp;</span><span class="sc-gUjEZj NOJej">updated <span title="Fri Dec 21 2018 08:52:59 GMT+0500 (Pakistan Standard Time)">3 years ago</span></span></span></time></div></div></div><div class="sc-dpAbEl FBpMi" style="height: 47px; width: 997px;"><div offset="64" class="sc-edMmki iimLbP"></div><div class="sc-hCHCKH jOwxlU" style="top: 64px; height: 47px; width: 997px; position: fixed; z-index: 999;"><div class="pageheader__bottom pageheader__bottom"><div class="sc-iJyWWx EwYlq"><div class="sc-eUVghK jLqpG"><nav class="pageheader__nav pageheader__nav--dataset "><div class="pageheader__nav-wrapper"><a href="https://www.kaggle.com/karangadiya/fifa19" title="Data" class="pageheader__left-links pageheader__left-links--with-onclick pageheader__left-links--selected" id="pageheader-nav-item--data"><span><span>Data</span></span></a><a href="https://www.kaggle.com/karangadiya/fifa19/code" title="Code" class="pageheader__left-links pageheader__left-links--with-onclick" id="pageheader-nav-item--code"><span><span>Code</span><span class="pageheader__link-count">(<span>601</span>)</span></span></a><a href="https://www.kaggle.com/karangadiya/fifa19/discussion" title="Discussion" class="pageheader__left-links pageheader__left-links--with-onclick" id="pageheader-nav-item--discussion"><span><span>Discussion</span><span class="pageheader__link-count">(<span>35</span>)</span></span></a><a href="https://www.kaggle.com/karangadiya/fifa19/activity" title="Activity" class="pageheader__left-links pageheader__left-links--with-onclick" id="pageheader-nav-item--activity"><span><span>Activity</span></span></a><a href="https://www.kaggle.com/karangadiya/fifa19/metadata" title="Metadata" class="pageheader__left-links pageheader__left-links--with-onclick" id="pageheader-nav-item--metadata"><span><span>Metadata</span></span></a><div class="pageheader__right-links-wrapper"></div></div></nav></div></div><div class="sc-cOZAYU bjGiBz"><a href="https://www.kaggle.com/karangadiya/fifa19/download" tabindex="0" data-disable-rapidash="true" class="sc-dTSzeu krkYvd"><button class="sc-htmcrh iuGcNF sc-RGXRj cowssZ" tabindex="-1" role="button"><span class="sc-gXfVKN sc-cBoqAE jmJemH lRfdj">Download (9 MB)</span></button></a><button class="sc-htmcrh bPqyJL sc-RGXRj cowssZ" tabindex="0" role="button"><span class="sc-gXfVKN sc-cBoqAE jmJemH lRfdj">New Notebook</span></button><div class="sc-jOIWLa hzyWUa"><div class="sc-gjdhqi sc-cnqyBG cBagLt QeUDQ"><div class="sc-lOIgb eEPQra"><i sizevalue="20px" class="rmwc-icon google-material-icons sc-gKAaRy iExRbS">more_vert</i></div></div></div></div></div><div></div><div class="pageheader__transition"></div></div></div><div></div></div></div></div><div class="sc-dRQdmh XiyVC"><div class="sc-eIRKgS eyAPbR"><div class="content-box content-box--no-title"><div class="content-box__content-section content-box__content-section--no-title"><div class="content-box__simple-content-box"><div class="content-box__simple-content"><div class="sc-cPMrpq hFwqPN"><div class="sc-gzPOro dnuPCE" data-test="usability-wrapper"><i sizevalue="1.125em" verticalalign="-0.125em" class="rmwc-icon google-material-icons sc-gKAaRy gSZLwU sc-cTizCh iKrMNY">business_center</i><div data-test="text" class="sc-iCoGMd sc-fKgJPI sc-lgDIAz cHRTxu cxbltl inUWLW">Usability</div><p data-test="rating" class="sc-cxNHIi sc-lmgQwP sc-cYSVRu kYejgE hpRDUw hstJRk">10.0</p></div><div class="sc-eNhNSN fFuaQP"><div class="sc-hmBQXz hlgIFU"><span name="balance-scale" class="sc-kaYUvH dVBtYr fa-fw fa fa-balance-scale"></span><div class="sc-iBUlhY sc-kKwncU lUtRJ ilzdFf">License</div></div><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" class="sc-gHAgDl fifVoh">CC BY-NC-SA 4.0</a></div><div class="sc-gHBSxA gsYZSM"><div class="sc-hmBQXz hlgIFU"><span name="tag" class="sc-kaYUvH dVBtYr fa-fw fa fa-tag"></span><div class="sc-iBUlhY sc-kKwncU lUtRJ ilzdFf">Tags</div></div><div class="mdc-menu-surface--anchor"><div class="sc-FRrlG PPKzT sc-irvLRx YTbJz" data-tip="true" data-for="tooltip_components_cdc1a54a-ca84-4502-beb3-3e3dea19b4b1" currentitem="false"><a href="https://www.kaggle.com/datasets?tags=4141-Sports" rel="noopener" class="sc-fsjynb hDsBpL">sports</a><span>,&nbsp;</span><div class="__react_component_tooltip t4b5735f5-5ad3-4836-98fe-f6e174bf97a4 place-top type-dark" id="tooltip_components_cdc1a54a-ca84-4502-beb3-3e3dea19b4b1" data-id="tooltip" style="left: 850px; top: 334px;"><style aria-hidden="true">
+  	.t4b5735f5-5ad3-4836-98fe-f6e174bf97a4 {
+	    color: #fff;
+	    background: #222;
+	    border: 1px solid transparent;
+  	}
+
+  	.t4b5735f5-5ad3-4836-98fe-f6e174bf97a4.place-top {
+        margin-top: -10px;
+    }
+    .t4b5735f5-5ad3-4836-98fe-f6e174bf97a4.place-top::before {
+        border-top: 8px solid transparent;
+    }
+    .t4b5735f5-5ad3-4836-98fe-f6e174bf97a4.place-top::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        bottom: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-top-color: #222;
+        border-top-style: solid;
+        border-top-width: 6px;
+    }
+
+    .t4b5735f5-5ad3-4836-98fe-f6e174bf97a4.place-bottom {
+        margin-top: 10px;
+    }
+    .t4b5735f5-5ad3-4836-98fe-f6e174bf97a4.place-bottom::before {
+        border-bottom: 8px solid transparent;
+    }
+    .t4b5735f5-5ad3-4836-98fe-f6e174bf97a4.place-bottom::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        top: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-bottom-color: #222;
+        border-bottom-style: solid;
+        border-bottom-width: 6px;
+    }
+
+    .t4b5735f5-5ad3-4836-98fe-f6e174bf97a4.place-left {
+        margin-left: -10px;
+    }
+    .t4b5735f5-5ad3-4836-98fe-f6e174bf97a4.place-left::before {
+        border-left: 8px solid transparent;
+    }
+    .t4b5735f5-5ad3-4836-98fe-f6e174bf97a4.place-left::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        right: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-left-color: #222;
+        border-left-style: solid;
+        border-left-width: 6px;
+    }
+
+    .t4b5735f5-5ad3-4836-98fe-f6e174bf97a4.place-right {
+        margin-left: 10px;
+    }
+    .t4b5735f5-5ad3-4836-98fe-f6e174bf97a4.place-right::before {
+        border-right: 8px solid transparent;
+    }
+    .t4b5735f5-5ad3-4836-98fe-f6e174bf97a4.place-right::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        left: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-right-color: #222;
+        border-right-style: solid;
+        border-right-width: 6px;
+    }
+  </style><div class="sc-fXazdy gZkvye"><div class="sc-hSztSh dXAqZK"><p class="sc-buqqEi jnxcyv">sports</p><p>subject &gt; health and fitness &gt; exercise &gt; sports</p></div></div></div></div><div class="sc-FRrlG PPKzT sc-irvLRx YTbJz" data-tip="true" data-for="tooltip_components_9739ae1b-0942-4c0f-8c65-e10c6b2b6b47" currentitem="false"><a href="https://www.kaggle.com/datasets?tags=13208-Data+Visualization" rel="noopener" class="sc-fsjynb hDsBpL">data visualization</a><span>,&nbsp;</span><div class="__react_component_tooltip t5dd44c50-3e9a-4132-beba-8d5e53418127 place-top type-dark" id="tooltip_components_9739ae1b-0942-4c0f-8c65-e10c6b2b6b47" data-id="tooltip"><style aria-hidden="true">
+  	.t5dd44c50-3e9a-4132-beba-8d5e53418127 {
+	    color: #fff;
+	    background: #222;
+	    border: 1px solid transparent;
+  	}
+
+  	.t5dd44c50-3e9a-4132-beba-8d5e53418127.place-top {
+        margin-top: -10px;
+    }
+    .t5dd44c50-3e9a-4132-beba-8d5e53418127.place-top::before {
+        border-top: 8px solid transparent;
+    }
+    .t5dd44c50-3e9a-4132-beba-8d5e53418127.place-top::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        bottom: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-top-color: #222;
+        border-top-style: solid;
+        border-top-width: 6px;
+    }
+
+    .t5dd44c50-3e9a-4132-beba-8d5e53418127.place-bottom {
+        margin-top: 10px;
+    }
+    .t5dd44c50-3e9a-4132-beba-8d5e53418127.place-bottom::before {
+        border-bottom: 8px solid transparent;
+    }
+    .t5dd44c50-3e9a-4132-beba-8d5e53418127.place-bottom::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        top: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-bottom-color: #222;
+        border-bottom-style: solid;
+        border-bottom-width: 6px;
+    }
+
+    .t5dd44c50-3e9a-4132-beba-8d5e53418127.place-left {
+        margin-left: -10px;
+    }
+    .t5dd44c50-3e9a-4132-beba-8d5e53418127.place-left::before {
+        border-left: 8px solid transparent;
+    }
+    .t5dd44c50-3e9a-4132-beba-8d5e53418127.place-left::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        right: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-left-color: #222;
+        border-left-style: solid;
+        border-left-width: 6px;
+    }
+
+    .t5dd44c50-3e9a-4132-beba-8d5e53418127.place-right {
+        margin-left: 10px;
+    }
+    .t5dd44c50-3e9a-4132-beba-8d5e53418127.place-right::before {
+        border-right: 8px solid transparent;
+    }
+    .t5dd44c50-3e9a-4132-beba-8d5e53418127.place-right::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        left: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-right-color: #222;
+        border-right-style: solid;
+        border-right-width: 6px;
+    }
+  </style><div class="sc-fXazdy gZkvye"><div class="sc-hSztSh dXAqZK"><p class="sc-buqqEi jnxcyv">data visualization</p><p>technique &gt; data visualization</p></div></div></div></div><div class="sc-FRrlG PPKzT sc-irvLRx YTbJz" data-tip="true" data-for="tooltip_components_8db2cbae-39f5-40c5-a406-2e6332a4aa7d" currentitem="false"><a href="https://www.kaggle.com/datasets?tags=2603-Football" rel="noopener" class="sc-fsjynb hDsBpL">football</a><span>,&nbsp;</span><div class="__react_component_tooltip t0b4c49d3-41e6-427b-8d79-143a323bd6bd place-top type-dark" id="tooltip_components_8db2cbae-39f5-40c5-a406-2e6332a4aa7d" data-id="tooltip"><style aria-hidden="true">
+  	.t0b4c49d3-41e6-427b-8d79-143a323bd6bd {
+	    color: #fff;
+	    background: #222;
+	    border: 1px solid transparent;
+  	}
+
+  	.t0b4c49d3-41e6-427b-8d79-143a323bd6bd.place-top {
+        margin-top: -10px;
+    }
+    .t0b4c49d3-41e6-427b-8d79-143a323bd6bd.place-top::before {
+        border-top: 8px solid transparent;
+    }
+    .t0b4c49d3-41e6-427b-8d79-143a323bd6bd.place-top::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        bottom: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-top-color: #222;
+        border-top-style: solid;
+        border-top-width: 6px;
+    }
+
+    .t0b4c49d3-41e6-427b-8d79-143a323bd6bd.place-bottom {
+        margin-top: 10px;
+    }
+    .t0b4c49d3-41e6-427b-8d79-143a323bd6bd.place-bottom::before {
+        border-bottom: 8px solid transparent;
+    }
+    .t0b4c49d3-41e6-427b-8d79-143a323bd6bd.place-bottom::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        top: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-bottom-color: #222;
+        border-bottom-style: solid;
+        border-bottom-width: 6px;
+    }
+
+    .t0b4c49d3-41e6-427b-8d79-143a323bd6bd.place-left {
+        margin-left: -10px;
+    }
+    .t0b4c49d3-41e6-427b-8d79-143a323bd6bd.place-left::before {
+        border-left: 8px solid transparent;
+    }
+    .t0b4c49d3-41e6-427b-8d79-143a323bd6bd.place-left::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        right: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-left-color: #222;
+        border-left-style: solid;
+        border-left-width: 6px;
+    }
+
+    .t0b4c49d3-41e6-427b-8d79-143a323bd6bd.place-right {
+        margin-left: 10px;
+    }
+    .t0b4c49d3-41e6-427b-8d79-143a323bd6bd.place-right::before {
+        border-right: 8px solid transparent;
+    }
+    .t0b4c49d3-41e6-427b-8d79-143a323bd6bd.place-right::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        left: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-right-color: #222;
+        border-right-style: solid;
+        border-right-width: 6px;
+    }
+  </style><div class="sc-fXazdy gZkvye"><div class="sc-hSztSh dXAqZK"><p class="sc-buqqEi jnxcyv">football</p><p>subject &gt; health and fitness &gt; exercise &gt; sports &gt; football</p></div></div></div></div><div class="sc-FRrlG PPKzT sc-irvLRx YTbJz" data-tip="true" data-for="tooltip_components_bc34c231-86ed-4fbd-a87c-896956ff6c5b" currentitem="false"><a href="https://www.kaggle.com/datasets?tags=13306-Feature+Engineering" rel="noopener" class="sc-fsjynb hDsBpL">feature engineering</a><span>,&nbsp;</span><div class="__react_component_tooltip tc9e229f3-7736-4383-9cf1-3e78dce8f8d3 place-top type-dark" id="tooltip_components_bc34c231-86ed-4fbd-a87c-896956ff6c5b" data-id="tooltip"><style aria-hidden="true">
+  	.tc9e229f3-7736-4383-9cf1-3e78dce8f8d3 {
+	    color: #fff;
+	    background: #222;
+	    border: 1px solid transparent;
+  	}
+
+  	.tc9e229f3-7736-4383-9cf1-3e78dce8f8d3.place-top {
+        margin-top: -10px;
+    }
+    .tc9e229f3-7736-4383-9cf1-3e78dce8f8d3.place-top::before {
+        border-top: 8px solid transparent;
+    }
+    .tc9e229f3-7736-4383-9cf1-3e78dce8f8d3.place-top::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        bottom: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-top-color: #222;
+        border-top-style: solid;
+        border-top-width: 6px;
+    }
+
+    .tc9e229f3-7736-4383-9cf1-3e78dce8f8d3.place-bottom {
+        margin-top: 10px;
+    }
+    .tc9e229f3-7736-4383-9cf1-3e78dce8f8d3.place-bottom::before {
+        border-bottom: 8px solid transparent;
+    }
+    .tc9e229f3-7736-4383-9cf1-3e78dce8f8d3.place-bottom::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        top: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-bottom-color: #222;
+        border-bottom-style: solid;
+        border-bottom-width: 6px;
+    }
+
+    .tc9e229f3-7736-4383-9cf1-3e78dce8f8d3.place-left {
+        margin-left: -10px;
+    }
+    .tc9e229f3-7736-4383-9cf1-3e78dce8f8d3.place-left::before {
+        border-left: 8px solid transparent;
+    }
+    .tc9e229f3-7736-4383-9cf1-3e78dce8f8d3.place-left::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        right: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-left-color: #222;
+        border-left-style: solid;
+        border-left-width: 6px;
+    }
+
+    .tc9e229f3-7736-4383-9cf1-3e78dce8f8d3.place-right {
+        margin-left: 10px;
+    }
+    .tc9e229f3-7736-4383-9cf1-3e78dce8f8d3.place-right::before {
+        border-right: 8px solid transparent;
+    }
+    .tc9e229f3-7736-4383-9cf1-3e78dce8f8d3.place-right::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        left: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-right-color: #222;
+        border-right-style: solid;
+        border-right-width: 6px;
+    }
+  </style><div class="sc-fXazdy gZkvye"><div class="sc-hSztSh dXAqZK"><p class="sc-buqqEi jnxcyv">feature engineering</p><p>technique &gt; feature engineering</p></div></div></div></div><div class="sc-FRrlG PPKzT sc-irvLRx YTbJz" data-tip="true" data-for="tooltip_components_14699ce2-358d-42ee-aad1-71730c60bc57" currentitem="false"><a href="https://www.kaggle.com/datasets?tags=13402-Random+Forest" rel="noopener" class="sc-fsjynb hDsBpL">random forest</a><span>&nbsp;</span><div class="__react_component_tooltip t07c3f0d9-a5f4-4384-83b9-5bcc151616cb place-top type-dark" id="tooltip_components_14699ce2-358d-42ee-aad1-71730c60bc57" data-id="tooltip"><style aria-hidden="true">
+  	.t07c3f0d9-a5f4-4384-83b9-5bcc151616cb {
+	    color: #fff;
+	    background: #222;
+	    border: 1px solid transparent;
+  	}
+
+  	.t07c3f0d9-a5f4-4384-83b9-5bcc151616cb.place-top {
+        margin-top: -10px;
+    }
+    .t07c3f0d9-a5f4-4384-83b9-5bcc151616cb.place-top::before {
+        border-top: 8px solid transparent;
+    }
+    .t07c3f0d9-a5f4-4384-83b9-5bcc151616cb.place-top::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        bottom: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-top-color: #222;
+        border-top-style: solid;
+        border-top-width: 6px;
+    }
+
+    .t07c3f0d9-a5f4-4384-83b9-5bcc151616cb.place-bottom {
+        margin-top: 10px;
+    }
+    .t07c3f0d9-a5f4-4384-83b9-5bcc151616cb.place-bottom::before {
+        border-bottom: 8px solid transparent;
+    }
+    .t07c3f0d9-a5f4-4384-83b9-5bcc151616cb.place-bottom::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        top: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-bottom-color: #222;
+        border-bottom-style: solid;
+        border-bottom-width: 6px;
+    }
+
+    .t07c3f0d9-a5f4-4384-83b9-5bcc151616cb.place-left {
+        margin-left: -10px;
+    }
+    .t07c3f0d9-a5f4-4384-83b9-5bcc151616cb.place-left::before {
+        border-left: 8px solid transparent;
+    }
+    .t07c3f0d9-a5f4-4384-83b9-5bcc151616cb.place-left::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        right: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-left-color: #222;
+        border-left-style: solid;
+        border-left-width: 6px;
+    }
+
+    .t07c3f0d9-a5f4-4384-83b9-5bcc151616cb.place-right {
+        margin-left: 10px;
+    }
+    .t07c3f0d9-a5f4-4384-83b9-5bcc151616cb.place-right::before {
+        border-right: 8px solid transparent;
+    }
+    .t07c3f0d9-a5f4-4384-83b9-5bcc151616cb.place-right::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        left: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-right-color: #222;
+        border-right-style: solid;
+        border-right-width: 6px;
+    }
+  </style><div class="sc-fXazdy gZkvye"><div class="sc-hSztSh dXAqZK"><p class="sc-buqqEi jnxcyv">random forest</p><p>technique &gt; random forest</p></div></div></div></div><div aria-hidden="true" class="mdc-menu sc-bTDOke gRCJUu sc-cKhgmI fRPFrj mdc-menu-surface"><div role="menu" class="mdc-list mdc-menu__items mdc-list"><div class="sc-hrlCSN QiLvV"><div class="sc-bZesDY bCyfTj"><h6 class="sc-dlMDgC sc-kfYoZR mLwaE lpaEYv">Edit Tags</h6></div><button aria-label="close" class="sc-jSFjdj SCuyd undefined google-material-icons">close</button></div><div class="sc-joaiRD bOFeRz"><div class="sc-dVSYCO fAIXyp"><div class="sc-fpqIuI ioEHSz"><div class="sc-jtiXyc bdGDdI sc-faQVUR gNCsrv"><i sizevalue="24px" class="rmwc-icon google-material-icons sc-gKAaRy iExPwm sc-cKRKFl dVkdSY">search</i><input placeholder="Search Tags" aria-label="Search Tags" class="sc-ellfGf fZONTb" value=""></div></div><div class="sc-gLwjMs bLlYPs" style="min-height: 0px;"></div></div><div class="sc-hRLfyG cngnWq"><div class="sc-hDlsYP ecurBO"><span class="sc-carFqZ sc-iTVJFM jXJZzc oxVOu">Apply up to 5 tags to help Kaggle 
+users find your dataset.</span></div></div></div><div class="sc-epOimh bVyhIf"><div class="sc-hgIrPW bDIhnP"><button class="sc-gGqFFC cSOSXf selected has-remove" role="checkbox" aria-checked="true" tabindex="-1"><span class="sc-kLojOw sc-iklJeh eGLYxv hbusih">Sports</span><i color="#202124" sizevalue="20px" role="button" tabindex="0" class="rmwc-icon google-material-icons sc-gKAaRy iExRbS sc-juNJA-d iYhsNc">close</i></button><button class="sc-gGqFFC cSOSXf selected has-remove" role="checkbox" aria-checked="true" tabindex="-1"><span class="sc-kLojOw sc-iklJeh eGLYxv hbusih">Data Visualization</span><i color="#202124" sizevalue="20px" role="button" tabindex="0" class="rmwc-icon google-material-icons sc-gKAaRy iExRbS sc-juNJA-d iYhsNc">close</i></button><button class="sc-gGqFFC cSOSXf selected has-remove" role="checkbox" aria-checked="true" tabindex="-1"><span class="sc-kLojOw sc-iklJeh eGLYxv hbusih">Football</span><i color="#202124" sizevalue="20px" role="button" tabindex="0" class="rmwc-icon google-material-icons sc-gKAaRy iExRbS sc-juNJA-d iYhsNc">close</i></button><button class="sc-gGqFFC cSOSXf selected has-remove" role="checkbox" aria-checked="true" tabindex="-1"><span class="sc-kLojOw sc-iklJeh eGLYxv hbusih">Feature Engineering</span><i color="#202124" sizevalue="20px" role="button" tabindex="0" class="rmwc-icon google-material-icons sc-gKAaRy iExRbS sc-juNJA-d iYhsNc">close</i></button><button class="sc-gGqFFC cSOSXf selected has-remove" role="checkbox" aria-checked="true" tabindex="-1"><span class="sc-kLojOw sc-iklJeh eGLYxv hbusih">Random Forest</span><i color="#202124" sizevalue="20px" role="button" tabindex="0" class="rmwc-icon google-material-icons sc-gKAaRy iExRbS sc-juNJA-d iYhsNc">close</i></button></div><button class="sc-htmcrh cmmDii" tabindex="0" role="button"><span class="sc-gXfVKN sc-cBoqAE jmJemH lRfdj">Apply</span></button></div></div></div></div></div></div></div></div></div></div></div><div class="sc-eIRKgS eyAPbR"><div class="content-box"><div><div class="content-box__title-bar"><div class="sc-bclYmG kZtWSG" style="line-height: 46px;">Description</div></div></div><div class="content-box__content-section"><div class="sc-gMxASX dfRqIo"><div class="sc-itGatK kYaICX"><div class="sc-jmNwyd bMCoQf"><div class="markdown-converter__text--rendered"><h3>Context</h3>
+<p>Football analytics</p>
+<h3>Content</h3>
+<p>Detailed attributes for every player registered in the latest edition of FIFA 19 database.<br>
+Scraping code at GitHub repo: <a rel="noreferrer nofollow" href="https://github.com/amanthedorkknight/fifa18-all-player-statistics/tree/master/2019">https://github.com/amanthedorkknight/fifa18-all-player-statistics/tree/master/2019</a></p>
+<h3>Acknowledgements</h3>
+<p>Data scraped from <a rel="noreferrer nofollow" href="https://sofifa.com/">https://sofifa.com/</a></p>
+<h3>Inspiration</h3>
+<p>Inspired from this dataset: <a href="https://www.kaggle.com/thec03u5/fifa-18-demo-player-dataset">https://www.kaggle.com/thec03u5/fifa-18-demo-player-dataset</a></p></div></div></div><div class="sc-kTVVYQ gRvztT"><span name="angle-down" class="sc-ihTBEf caJtlU fa fa-angle-down"></span></div></div></div></div></div><div class="sc-eIRKgS eyAPbR"><div aria-live="assertive" aria-atomic="true" aria-hidden="true" class="sc-gmfbyV bBjmsr mdc-snackbar mdc-snackbar--leading"><div class="mdc-snackbar__surface"><div role="status" aria-live="polite" class="mdc-snackbar__label"><div style="display: none;"></div></div><div class="mdc-snackbar__actions"></div></div></div><div class="sc-kMbIer vqlNf"><div class="sc-bra-dki eNRcRg"><div class="sc-djDyAE bqOMkx"><div class="sc-hGsYiN begwAn"><div class="sc-kAeONC gBQUqd"><div class="sc-bGwMnC dZGSDE"><h6 class="sc-dlMDgC sc-kfYoZR sc-gdmlVL mLwaE lpaEYv">Data Explorer</h6><p class="sc-cxNHIi sc-lmgQwP sc-egMHSI ctyHFD hpRDUw dcDhlP">9.14 MB</p></div><ul class="sc-iDChAR eezbew"><ul class="sc-fgdcDH gehpnq"><div role="button" class="sc-cPbyew sc-gbuNkn kvgNZL cPeLgT"><div class="sc-glqbRx flTfOr"><i sizevalue="18px" class="rmwc-icon google-material-icons sc-gKAaRy iExUpp">calendar_view_week</i></div><div class="sc-hIDmLa fasLkZ"><div class="sc-FRrlG PPKzT sc-eVSbpq hTydSn" data-tip="true" data-for="tooltip_components_96ee8efc-614e-4a15-a143-dda85d057a22" currentitem="false"><p class="sc-cxNHIi sc-lmgQwP sc-hTkndb kYejgE hpRDUw cjhjwZ">data.csv</p><div class="__react_component_tooltip tfea94aaf-c275-4704-8b6b-39420b1cd280 place-top type-dark" id="tooltip_components_96ee8efc-614e-4a15-a143-dda85d057a22" data-id="tooltip" style="left: 277px; top: 423px;"><style aria-hidden="true">
+  	.tfea94aaf-c275-4704-8b6b-39420b1cd280 {
+	    color: #fff;
+	    background: #222;
+	    border: 1px solid transparent;
+  	}
+
+  	.tfea94aaf-c275-4704-8b6b-39420b1cd280.place-top {
+        margin-top: -10px;
+    }
+    .tfea94aaf-c275-4704-8b6b-39420b1cd280.place-top::before {
+        border-top: 8px solid transparent;
+    }
+    .tfea94aaf-c275-4704-8b6b-39420b1cd280.place-top::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        bottom: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-top-color: #222;
+        border-top-style: solid;
+        border-top-width: 6px;
+    }
+
+    .tfea94aaf-c275-4704-8b6b-39420b1cd280.place-bottom {
+        margin-top: 10px;
+    }
+    .tfea94aaf-c275-4704-8b6b-39420b1cd280.place-bottom::before {
+        border-bottom: 8px solid transparent;
+    }
+    .tfea94aaf-c275-4704-8b6b-39420b1cd280.place-bottom::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        top: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-bottom-color: #222;
+        border-bottom-style: solid;
+        border-bottom-width: 6px;
+    }
+
+    .tfea94aaf-c275-4704-8b6b-39420b1cd280.place-left {
+        margin-left: -10px;
+    }
+    .tfea94aaf-c275-4704-8b6b-39420b1cd280.place-left::before {
+        border-left: 8px solid transparent;
+    }
+    .tfea94aaf-c275-4704-8b6b-39420b1cd280.place-left::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        right: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-left-color: #222;
+        border-left-style: solid;
+        border-left-width: 6px;
+    }
+
+    .tfea94aaf-c275-4704-8b6b-39420b1cd280.place-right {
+        margin-left: 10px;
+    }
+    .tfea94aaf-c275-4704-8b6b-39420b1cd280.place-right::before {
+        border-right: 8px solid transparent;
+    }
+    .tfea94aaf-c275-4704-8b6b-39420b1cd280.place-right::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        left: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-right-color: #222;
+        border-right-style: solid;
+        border-right-width: 6px;
+    }
+  </style><div class="sc-fXazdy gZkvye">data.csv (9.14 MB)</div></div></div></div></div></ul></ul></div></div><div class="sc-hXEEGj ejvCDu"><h6 class="sc-dlMDgC sc-kfYoZR sc-jwhXbD mLwaE lpaEYv liTOIC">Summary</h6><div class="sc-fspWgZ eCtGEh"><div class="sc-cuXKto dPmWwD"><div class="sc-dAwaEi hgrNIu"><i color="#5F6368" sizevalue="18px" class="rmwc-icon google-material-icons sc-gKAaRy yTnNO sc-bxOBbk kYbXEO">arrow_right</i></div><div class="sc-glqbRx fRfbNL"><i sizevalue="18px" class="rmwc-icon google-material-icons sc-gKAaRy iExUpp">folder</i></div><p class="sc-cxNHIi sc-lmgQwP sc-evgMOV ctyHFD hpRDUw icUaSA">1 file</p></div></div><div class="sc-fspWgZ eCtGEh"><div class="sc-cuXKto dPmWwD"><div class="sc-dAwaEi hgrNIu"><i color="#5F6368" sizevalue="18px" class="rmwc-icon google-material-icons sc-gKAaRy yTnNO sc-bxOBbk kYbXEO">arrow_right</i></div><div class="sc-glqbRx fRfbNL"><i sizevalue="18px" class="rmwc-icon google-material-icons sc-gKAaRy iExUpp">calendar_view_week</i></div><p class="sc-cxNHIi sc-lmgQwP sc-evgMOV ctyHFD hpRDUw icUaSA">89 columns</p></div></div></div></div><div class="sc-eBbsjt cFYsWg"><div class="sc-gQRSwv hDoMmW"><div class="sc-Wlwow cYqjZz"><div class="sc-FRrlG PPKzT" data-tip="true" data-for="tooltip_components_e4c0119e-4315-4819-ae76-61692ea496f1" currentitem="false"><i color="rgba(0,0,0,0.7)" sizevalue="24px" role="button" tabindex="0" class="rmwc-icon google-material-icons sc-gKAaRy gmMscQ sc-hwIvmO gNucww">chevron_left</i><div class="__react_component_tooltip t4de70b44-1a11-4647-a1d0-b340081eecc6 place-top type-dark" id="tooltip_components_e4c0119e-4315-4819-ae76-61692ea496f1" data-id="tooltip"><style aria-hidden="true">
+  	.t4de70b44-1a11-4647-a1d0-b340081eecc6 {
+	    color: #fff;
+	    background: #222;
+	    border: 1px solid transparent;
+  	}
+
+  	.t4de70b44-1a11-4647-a1d0-b340081eecc6.place-top {
+        margin-top: -10px;
+    }
+    .t4de70b44-1a11-4647-a1d0-b340081eecc6.place-top::before {
+        border-top: 8px solid transparent;
+    }
+    .t4de70b44-1a11-4647-a1d0-b340081eecc6.place-top::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        bottom: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-top-color: #222;
+        border-top-style: solid;
+        border-top-width: 6px;
+    }
+
+    .t4de70b44-1a11-4647-a1d0-b340081eecc6.place-bottom {
+        margin-top: 10px;
+    }
+    .t4de70b44-1a11-4647-a1d0-b340081eecc6.place-bottom::before {
+        border-bottom: 8px solid transparent;
+    }
+    .t4de70b44-1a11-4647-a1d0-b340081eecc6.place-bottom::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        top: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-bottom-color: #222;
+        border-bottom-style: solid;
+        border-bottom-width: 6px;
+    }
+
+    .t4de70b44-1a11-4647-a1d0-b340081eecc6.place-left {
+        margin-left: -10px;
+    }
+    .t4de70b44-1a11-4647-a1d0-b340081eecc6.place-left::before {
+        border-left: 8px solid transparent;
+    }
+    .t4de70b44-1a11-4647-a1d0-b340081eecc6.place-left::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        right: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-left-color: #222;
+        border-left-style: solid;
+        border-left-width: 6px;
+    }
+
+    .t4de70b44-1a11-4647-a1d0-b340081eecc6.place-right {
+        margin-left: 10px;
+    }
+    .t4de70b44-1a11-4647-a1d0-b340081eecc6.place-right::before {
+        border-right: 8px solid transparent;
+    }
+    .t4de70b44-1a11-4647-a1d0-b340081eecc6.place-right::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        left: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-right-color: #222;
+        border-right-style: solid;
+        border-right-width: 6px;
+    }
+  </style><div class="sc-fXazdy gZkvye">Hide tree</div></div></div><h5 class="sc-dIvrsQ sc-hHEiqL sc-jrhObB kSVYRu ccTnQh ipCvbT">data.csv<span class="sc-kuaHaz dpGIRV">(9.14 MB)</span></h5><div class="sc-FRrlG PPKzT" data-tip="true" data-for="tooltip_components_64f427e8-3a43-41ba-b449-1d53423c9699" currentitem="false"><i color="rgba(0,0,0,0.7)" sizevalue="24px" role="button" tabindex="0" class="rmwc-icon google-material-icons sc-gKAaRy gmMscQ sc-hwIvmO gCaa-ds">get_app</i><div class="__react_component_tooltip t1b03276e-01bb-4ef3-a434-0dda2e1e2878 place-top type-dark" id="tooltip_components_64f427e8-3a43-41ba-b449-1d53423c9699" data-id="tooltip"><style aria-hidden="true">
+  	.t1b03276e-01bb-4ef3-a434-0dda2e1e2878 {
+	    color: #fff;
+	    background: #222;
+	    border: 1px solid transparent;
+  	}
+
+  	.t1b03276e-01bb-4ef3-a434-0dda2e1e2878.place-top {
+        margin-top: -10px;
+    }
+    .t1b03276e-01bb-4ef3-a434-0dda2e1e2878.place-top::before {
+        border-top: 8px solid transparent;
+    }
+    .t1b03276e-01bb-4ef3-a434-0dda2e1e2878.place-top::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        bottom: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-top-color: #222;
+        border-top-style: solid;
+        border-top-width: 6px;
+    }
+
+    .t1b03276e-01bb-4ef3-a434-0dda2e1e2878.place-bottom {
+        margin-top: 10px;
+    }
+    .t1b03276e-01bb-4ef3-a434-0dda2e1e2878.place-bottom::before {
+        border-bottom: 8px solid transparent;
+    }
+    .t1b03276e-01bb-4ef3-a434-0dda2e1e2878.place-bottom::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        top: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-bottom-color: #222;
+        border-bottom-style: solid;
+        border-bottom-width: 6px;
+    }
+
+    .t1b03276e-01bb-4ef3-a434-0dda2e1e2878.place-left {
+        margin-left: -10px;
+    }
+    .t1b03276e-01bb-4ef3-a434-0dda2e1e2878.place-left::before {
+        border-left: 8px solid transparent;
+    }
+    .t1b03276e-01bb-4ef3-a434-0dda2e1e2878.place-left::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        right: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-left-color: #222;
+        border-left-style: solid;
+        border-left-width: 6px;
+    }
+
+    .t1b03276e-01bb-4ef3-a434-0dda2e1e2878.place-right {
+        margin-left: 10px;
+    }
+    .t1b03276e-01bb-4ef3-a434-0dda2e1e2878.place-right::before {
+        border-right: 8px solid transparent;
+    }
+    .t1b03276e-01bb-4ef3-a434-0dda2e1e2878.place-right::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        left: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-right-color: #222;
+        border-right-style: solid;
+        border-right-width: 6px;
+    }
+  </style><div class="sc-fXazdy gZkvye">Download</div></div></div><div class="sc-FRrlG PPKzT" data-tip="true" data-for="tooltip_components_66dc8918-9301-482e-95bb-28223f688798" currentitem="false"><i color="rgba(0,0,0,0.7)" sizevalue="24px" role="button" tabindex="0" class="rmwc-icon google-material-icons sc-gKAaRy gmMscQ sc-hwIvmO gCaa-ds">fullscreen</i><div class="__react_component_tooltip te83bf2a0-4edf-45f3-bb3d-636beec9f1e2 place-top type-dark" id="tooltip_components_66dc8918-9301-482e-95bb-28223f688798" data-id="tooltip"><style aria-hidden="true">
+  	.te83bf2a0-4edf-45f3-bb3d-636beec9f1e2 {
+	    color: #fff;
+	    background: #222;
+	    border: 1px solid transparent;
+  	}
+
+  	.te83bf2a0-4edf-45f3-bb3d-636beec9f1e2.place-top {
+        margin-top: -10px;
+    }
+    .te83bf2a0-4edf-45f3-bb3d-636beec9f1e2.place-top::before {
+        border-top: 8px solid transparent;
+    }
+    .te83bf2a0-4edf-45f3-bb3d-636beec9f1e2.place-top::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        bottom: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-top-color: #222;
+        border-top-style: solid;
+        border-top-width: 6px;
+    }
+
+    .te83bf2a0-4edf-45f3-bb3d-636beec9f1e2.place-bottom {
+        margin-top: 10px;
+    }
+    .te83bf2a0-4edf-45f3-bb3d-636beec9f1e2.place-bottom::before {
+        border-bottom: 8px solid transparent;
+    }
+    .te83bf2a0-4edf-45f3-bb3d-636beec9f1e2.place-bottom::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        top: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-bottom-color: #222;
+        border-bottom-style: solid;
+        border-bottom-width: 6px;
+    }
+
+    .te83bf2a0-4edf-45f3-bb3d-636beec9f1e2.place-left {
+        margin-left: -10px;
+    }
+    .te83bf2a0-4edf-45f3-bb3d-636beec9f1e2.place-left::before {
+        border-left: 8px solid transparent;
+    }
+    .te83bf2a0-4edf-45f3-bb3d-636beec9f1e2.place-left::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        right: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-left-color: #222;
+        border-left-style: solid;
+        border-left-width: 6px;
+    }
+
+    .te83bf2a0-4edf-45f3-bb3d-636beec9f1e2.place-right {
+        margin-left: 10px;
+    }
+    .te83bf2a0-4edf-45f3-bb3d-636beec9f1e2.place-right::before {
+        border-right: 8px solid transparent;
+    }
+    .te83bf2a0-4edf-45f3-bb3d-636beec9f1e2.place-right::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        left: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-right-color: #222;
+        border-right-style: solid;
+        border-right-width: 6px;
+    }
+  </style><div class="sc-fXazdy gZkvye">Maximize view</div></div></div></div><div class="sc-jKHJBu cdtKZP"><div class="sc-eduVpU cCSiwX"><div class="sc-iAkuYd icPIVz"><div class="sc-dmdEzd dxxlSj" role="tablist"><button role="tab" aria-selected="true" class="sc-krBkDu jFyJoW"><div class="sc-gutiBv ePjXKv"><span class="sc-ezzafa sc-bYwzuL fQxGZC fDDjHD">Detail</span><span class="sc-cBaREX jBncSK"></span></div></button><button role="tab" aria-selected="false" class="sc-krBkDu jFyJoW"><div class="sc-gutiBv ePjXKv"><span class="sc-ezzafa sc-bYwzuL dfGXIV fDDjHD">Compact</span></div></button><button role="tab" aria-selected="false" class="sc-krBkDu jFyJoW"><div class="sc-gutiBv ePjXKv"><span class="sc-ezzafa sc-bYwzuL dfGXIV fDDjHD">Column</span></div></button></div></div><div class="sc-eBZBzK fUTsya"><div class="sc-iYPbhT gSPEhK"><p class="sc-cxNHIi sc-lmgQwP sc-dglLXQ ctyHFD hpRDUw KcRHb">10 of 89 columns</p><i color="#5F6368" sizevalue="20px" class="rmwc-icon google-material-icons sc-gKAaRy yTqYN">keyboard_arrow_down</i></div></div></div></div><div class="sc-kWoLCT dVmCPE"><div class="sc-bLCdGq eUoxeh"><div class="sc-kgRGqL gQJuiQ"><div class="sc-iCoGMd sc-fKgJPI sc-jkYZiw cHRTxu cxbltl hUMas">About this file</div></div><div class="sc-bIXyUr sc-hotQEp doUNkR UXmIF"><div class="markdown-converter__text--rendered"><p>data.csv includes lastest edition FIFA 2019 players attributes like  Age, Nationality, Overall, Potential, Club, Value, Wage, Preferred Foot, International Reputation, Weak Foot, Skill Moves, Work Rate, Position, Jersey Number, Joined, Loaned From, Contract Valid Until, Height, Weight, LS, ST, RS, LW, LF, CF, RF, RW, LAM, CAM, RAM, LM, LCM, CM, RCM, RM, LWB, LDM, CDM, RDM, RWB, LB, LCB, CB, RCB, RB, Crossing, Finishing, Heading, Accuracy, ShortPassing, Volleys, Dribbling, Curve, FKAccuracy, LongPassing, BallControl, Acceleration, SprintSpeed, Agility, Reactions, Balance, ShotPower, Jumping, Stamina, Strength, LongShots, Aggression, Interceptions, Positioning, Vision, Penalties, Composure, Marking, StandingTackle, SlidingTackle, GKDiving, GKHandling, GKKicking, GKPositioning, GKReflexes, and Release Clause.</p></div></div></div><div class="sc-jTmQpv RWksc"></div><div class="sc-jTmQpv sc-jiCHnA RWksc bYByfL"></div><div class="sc-gaRKxJ dmLPsR"><div class="sc-hYWzPi bvjnIw"><div class="sc-cUZYnF sc-hokoDc jHGSmY fuhuTe"><div class="sc-egzrNl EpfcR"><i sizevalue="12px" class="rmwc-icon google-material-icons sc-gKAaRy iExQnT">grid_3x3</i><span class="sc-carFqZ sc-iTVJFM sc-bmFLHa jXJZzc oxVOu liurvU"></span><i color="#5F6368" sizevalue="18px" class="rmwc-icon google-material-icons sc-gKAaRy yTnNO">sort</i></div><p class="sc-iJCRrE sc-giAqHp sc-hNgGCs iDwXPD bYgUJS iBdVQT">row number</p></div><div class="sc-cUZYnF sc-hokoDc jHGSmY fuhuTe"><div class="sc-egzrNl EpfcR"><i sizevalue="12px" class="rmwc-icon google-material-icons sc-gKAaRy iExQnT">vpn_key</i><span class="sc-carFqZ sc-iTVJFM sc-bmFLHa jXJZzc oxVOu liurvU">ID</span><i color="#5F6368" sizevalue="18px" class="rmwc-icon google-material-icons sc-gKAaRy yTnNO">sort</i></div><p class="sc-iJCRrE sc-giAqHp sc-hNgGCs iDwXPD bYgUJS iBdVQT">unique id for every player</p></div><div class="sc-cUZYnF sc-hokoDc jHGSmY fuhuTe"><div class="sc-egzrNl EpfcR"><i sizevalue="12px" class="rmwc-icon google-material-icons sc-gKAaRy iExQnT">text_format</i><span class="sc-carFqZ sc-iTVJFM sc-bmFLHa jXJZzc oxVOu liurvU">Name</span><i color="#5F6368" sizevalue="18px" class="rmwc-icon google-material-icons sc-gKAaRy yTnNO">sort</i></div><p class="sc-iJCRrE sc-giAqHp sc-hNgGCs iDwXPD bYgUJS iBdVQT">name</p></div><div class="sc-cUZYnF sc-hokoDc jHGSmY fuhuTe"><div class="sc-egzrNl EpfcR"><i sizevalue="12px" class="rmwc-icon google-material-icons sc-gKAaRy iExQnT">grid_3x3</i><span class="sc-carFqZ sc-iTVJFM sc-bmFLHa jXJZzc oxVOu liurvU">Age</span><i color="#5F6368" sizevalue="18px" class="rmwc-icon google-material-icons sc-gKAaRy yTnNO">sort</i></div><p class="sc-iJCRrE sc-giAqHp sc-hNgGCs iDwXPD bYgUJS iBdVQT">age</p></div><div class="sc-cUZYnF sc-hokoDc jHGSmY fuhuTe"><div class="sc-egzrNl EpfcR"><i sizevalue="12px" class="rmwc-icon google-material-icons sc-gKAaRy iExQnT">link</i><span class="sc-carFqZ sc-iTVJFM sc-bmFLHa jXJZzc oxVOu liurvU">Photo</span><i color="#5F6368" sizevalue="18px" class="rmwc-icon google-material-icons sc-gKAaRy yTnNO">sort</i></div><p class="sc-iJCRrE sc-giAqHp sc-hNgGCs iDwXPD bYgUJS iBdVQT">url to the player's photo</p></div><div class="sc-cUZYnF sc-hokoDc jHGSmY fuhuTe"><div class="sc-egzrNl EpfcR"><i sizevalue="12px" class="rmwc-icon google-material-icons sc-gKAaRy iExQnT">text_format</i><span class="sc-carFqZ sc-iTVJFM sc-bmFLHa jXJZzc oxVOu liurvU">Nationality</span><i color="#5F6368" sizevalue="18px" class="rmwc-icon google-material-icons sc-gKAaRy yTnNO">sort</i></div><p class="sc-iJCRrE sc-giAqHp sc-hNgGCs iDwXPD bYgUJS iBdVQT">nationality</p></div><div class="sc-cUZYnF sc-hokoDc jHGSmY fuhuTe"><div class="sc-egzrNl EpfcR"><i sizevalue="12px" class="rmwc-icon google-material-icons sc-gKAaRy iExQnT">link</i><span class="sc-carFqZ sc-iTVJFM sc-bmFLHa jXJZzc oxVOu liurvU">Flag</span><i color="#5F6368" sizevalue="18px" class="rmwc-icon google-material-icons sc-gKAaRy yTnNO">sort</i></div><p class="sc-iJCRrE sc-giAqHp sc-hNgGCs iDwXPD bYgUJS iBdVQT">url to players's country flag</p></div><div class="sc-cUZYnF sc-hokoDc jHGSmY fuhuTe"><div class="sc-egzrNl EpfcR"><i sizevalue="12px" class="rmwc-icon google-material-icons sc-gKAaRy iExQnT">grid_3x3</i><span class="sc-carFqZ sc-iTVJFM sc-bmFLHa jXJZzc oxVOu liurvU">Overall</span><i color="#5F6368" sizevalue="18px" class="rmwc-icon google-material-icons sc-gKAaRy yTnNO">sort</i></div><p class="sc-iJCRrE sc-giAqHp sc-hNgGCs iDwXPD bYgUJS iBdVQT">overall rating</p></div><div class="sc-cUZYnF sc-hokoDc jHGSmY fuhuTe"><div class="sc-egzrNl EpfcR"><i sizevalue="12px" class="rmwc-icon google-material-icons sc-gKAaRy iExQnT">grid_3x3</i><span class="sc-carFqZ sc-iTVJFM sc-bmFLHa jXJZzc oxVOu liurvU">Potential</span><i color="#5F6368" sizevalue="18px" class="rmwc-icon google-material-icons sc-gKAaRy yTnNO">sort</i></div><p class="sc-iJCRrE sc-giAqHp sc-hNgGCs iDwXPD bYgUJS iBdVQT">potential rating</p></div><div class="sc-cUZYnF sc-hokoDc jHGSmY fuhuTe"><div class="sc-egzrNl EpfcR"><i sizevalue="12px" class="rmwc-icon google-material-icons sc-gKAaRy iExQnT">text_format</i><span class="sc-carFqZ sc-iTVJFM sc-bmFLHa jXJZzc oxVOu liurvU">Club</span><i color="#5F6368" sizevalue="18px" class="rmwc-icon google-material-icons sc-gKAaRy yTnNO">sort</i></div><p class="sc-iJCRrE sc-giAqHp sc-hNgGCs iDwXPD bYgUJS iBdVQT">current club</p></div></div></div><div class="sc-gZKCdl fIbuYr"><button class="sc-htmcrh iuGcNF sc-eLBchz gPAyyv" tabindex="0" role="button"><span class="sc-gXfVKN sc-cBoqAE jmJemH lRfdj">Cancel</span></button><button class="sc-htmcrh bPqyJL sc-eLBchz gPAyyv" tabindex="0" role="button"><span class="sc-gXfVKN sc-cBoqAE jmJemH lRfdj">Save</span></button></div><div class="sc-ecsqpA etHjdk"><div class="sc-hYWzPi bvjnIw"><div class="sc-cUZYnF sc-lndvYQ sc-iXVfIP jHGSmY gaJHBk kYfbkE"><div style="height: 70px; width: 100%;"><div id="numeric-chart-mO7pb667eE4A7AP4npSx/versions/eGPJ5NGY4TOcfHy1eCgO/files/data.csv/columns/IVIAFhbMWvMd9y8IfI8K" class="sc-hcnuUV kDoQpX" style="height: 70px; width: 100%;"><div style="position: relative;"><div dir="ltr" style="position: relative; width: 150px; height: 70px;"><div aria-label="A chart." style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;"><svg width="150" height="70" aria-label="A chart." style="overflow: hidden;"><defs id="_ABSTRACT_RENDERER_ID_10"><clippath id="_ABSTRACT_RENDERER_ID_11"><rect x="0" y="0" width="150" height="70"></rect></clippath></defs><rect x="0" y="0" width="150" height="70" stroke="none" stroke-width="0" fill="#ffffff"></rect><g><rect x="0" y="0" width="150" height="70" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g clip-path="url(https://www.kaggle.com/karangadiya/fifa19#_ABSTRACT_RENDERER_ID_11)"><g><rect x="0.5" y="1" width="7" height="68" stroke="none" stroke-width="0" fill="#007ba8"></rect><rect x="7.5" y="1" width="8" height="68" stroke="none" stroke-width="0" fill="#007ba8"></rect><rect x="15.5" y="1" width="7" height="68" stroke="none" stroke-width="0" fill="#007ba8"></rect><rect x="22.5" y="1" width="8" height="68" stroke="none" stroke-width="0" fill="#007ba8"></rect><rect x="30.5" y="1" width="7" height="68" stroke="none" stroke-width="0" fill="#007ba8"></rect><rect x="37.5" y="1" width="8" height="68" stroke="none" stroke-width="0" fill="#007ba8"></rect><rect x="45.5" y="1" width="7" height="68" stroke="none" stroke-width="0" fill="#007ba8"></rect><rect x="52.5" y="1" width="8" height="68" stroke="none" stroke-width="0" fill="#007ba8"></rect><rect x="60.5" y="1" width="7" height="68" stroke="none" stroke-width="0" fill="#007ba8"></rect><rect x="67.5" y="1" width="8" height="68" stroke="none" stroke-width="0" fill="#007ba8"></rect><rect x="75.5" y="1" width="7" height="68" stroke="none" stroke-width="0" fill="#007ba8"></rect><rect x="82.5" y="1" width="7" height="68" stroke="none" stroke-width="0" fill="#007ba8"></rect><rect x="89.5" y="1" width="8" height="68" stroke="none" stroke-width="0" fill="#007ba8"></rect><rect x="97.5" y="1" width="7" height="68" stroke="none" stroke-width="0" fill="#007ba8"></rect><rect x="104.5" y="1" width="8" height="68" stroke="none" stroke-width="0" fill="#007ba8"></rect><rect x="112.5" y="1" width="7" height="68" stroke="none" stroke-width="0" fill="#007ba8"></rect><rect x="119.5" y="1" width="8" height="68" stroke="none" stroke-width="0" fill="#007ba8"></rect><rect x="127.5" y="1" width="7" height="68" stroke="none" stroke-width="0" fill="#007ba8"></rect><rect x="134.5" y="1" width="8" height="68" stroke="none" stroke-width="0" fill="#007ba8"></rect><rect x="142.5" y="1" width="7" height="68" stroke="none" stroke-width="0" fill="#007ba8"></rect></g><g><rect x="0" y="69" width="150" height="1" stroke="none" stroke-width="0" fill="#333333"></rect></g></g><g></g></g><g></g></svg><div aria-label="A tabular representation of the data in the chart." style="position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden;"><table><thead><tr><th>Label</th><th>Count</th></tr></thead><tbody><tr><td>0.00 - 910.30</td><td>911</td></tr><tr><td>910.30 - 1820.60</td><td>910</td></tr><tr><td>1820.60 - 2730.90</td><td>910</td></tr><tr><td>2730.90 - 3641.20</td><td>911</td></tr><tr><td>3641.20 - 4551.50</td><td>910</td></tr><tr><td>4551.50 - 5461.80</td><td>910</td></tr><tr><td>5461.80 - 6372.10</td><td>911</td></tr><tr><td>6372.10 - 7282.40</td><td>910</td></tr><tr><td>7282.40 - 8192.70</td><td>910</td></tr><tr><td>8192.70 - 9103.00</td><td>910</td></tr><tr><td>9103.00 - 10013.30</td><td>911</td></tr><tr><td>10013.30 - 10923.60</td><td>910</td></tr><tr><td>10923.60 - 11833.90</td><td>910</td></tr><tr><td>11833.90 - 12744.20</td><td>911</td></tr><tr><td>12744.20 - 13654.50</td><td>910</td></tr><tr><td>13654.50 - 14564.80</td><td>910</td></tr><tr><td>14564.80 - 15475.10</td><td>911</td></tr><tr><td>15475.10 - 16385.40</td><td>910</td></tr><tr><td>16385.40 - 17295.70</td><td>910</td></tr><tr><td>17295.70 - 18206.00</td><td>911</td></tr></tbody></table></div></div></div><div aria-hidden="true" style="display: none; position: absolute; top: 80px; left: 160px; white-space: nowrap; font-family: Arial; font-size: 8px;">...</div><div></div></div></div></div><div class="sc-fuMreL iMulWe"><div class="sc-kPBEvI sc-hVcmJR crKJNX WpRnc">0</div><div class="sc-kPBEvI sc-hVcmJR sc-lgNkTe crKJNX WpRnc jUiEMz">18.2k</div></div></div><div class="sc-cUZYnF sc-lndvYQ sc-iXVfIP jHGSmY gaJHBk kYfbkE"><div style="height: 70px; width: 100%;"><div id="numeric-chart-mO7pb667eE4A7AP4npSx/versions/eGPJ5NGY4TOcfHy1eCgO/files/data.csv/columns/j5q44IO7ExR6NHCDR4Zy" class="sc-hcnuUV kDoQpX" style="height: 70px; width: 100%;"><div style="position: relative;"><div dir="ltr" style="position: relative; width: 150px; height: 70px;"><div aria-label="A chart." style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;"><svg width="150" height="70" aria-label="A chart." style="overflow: hidden;"><defs id="_ABSTRACT_RENDERER_ID_12"><clippath id="_ABSTRACT_RENDERER_ID_13"><rect x="0" y="0" width="150" height="70"></rect></clippath></defs><rect x="0" y="0" width="150" height="70" stroke="none" stroke-width="0" fill="#ffffff"></rect><g><rect x="0" y="0" width="150" height="70" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g clip-path="url(https://www.kaggle.com/karangadiya/fifa19#_ABSTRACT_RENDERER_ID_13)"><g><rect x="0.5" y="69.2285417060715" width="9" height="0.5" stroke="none" stroke-width="0" fill="#007ba8"></rect><rect x="9.5" y="69.23898240968413" width="9" height="0.5" stroke="none" stroke-width="0" fill="#007ba8"></rect><rect x="18.5" y="69.4060336674863" width="8" height="0.5" stroke="none" stroke-width="0" fill="#007ba8"></rect><rect x="26.5" y="69.27030452052205" width="9" height="0.5" stroke="none" stroke-width="0" fill="#007ba8"></rect><rect x="35.5" y="68.85267637601665" width="9" height="0.647323623983354" stroke="none" stroke-width="0" fill="#007ba8"></rect><rect x="44.5" y="69.09281255910724" width="9" height="0.5" stroke="none" stroke-width="0" fill="#007ba8"></rect><rect x="53.5" y="69.08237185549461" width="8" height="0.5" stroke="none" stroke-width="0" fill="#007ba8"></rect><rect x="61.5" y="69.15545678078306" width="9" height="0.5" stroke="none" stroke-width="0" fill="#007ba8"></rect><rect x="70.5" y="67" width="9" height="2" stroke="none" stroke-width="0" fill="#007ba8"></rect><rect x="79.5" y="66" width="9" height="3" stroke="none" stroke-width="0" fill="#007ba8"></rect><rect x="88.5" y="63" width="8" height="6" stroke="none" stroke-width="0" fill="#007ba8"></rect><rect x="96.5" y="56" width="9" height="13" stroke="none" stroke-width="0" fill="#007ba8"></rect><rect x="105.5" y="49" width="9" height="20" stroke="none" stroke-width="0" fill="#007ba8"></rect><rect x="114.5" y="38" width="9" height="31" stroke="none" stroke-width="0" fill="#007ba8"></rect><rect x="123.5" y="35" width="8" height="34" stroke="none" stroke-width="0" fill="#007ba8"></rect><rect x="131.5" y="21" width="9" height="48" stroke="none" stroke-width="0" fill="#007ba8"></rect><rect x="140.5" y="1" width="9" height="68" stroke="none" stroke-width="0" fill="#007ba8"></rect></g><g><rect x="0" y="69" width="150" height="1" stroke="none" stroke-width="0" fill="#333333"></rect></g></g><g></g></g><g></g></svg><div aria-label="A tabular representation of the data in the chart." style="position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden;"><table><thead><tr><th>Label</th><th>Count</th></tr></thead><tbody><tr><td>16.00 - 12346.20</td><td>26</td></tr><tr><td>12346.20 - 24676.40</td><td>25</td></tr><tr><td>24676.40 - 37006.60</td><td>9</td></tr><tr><td>37006.60 - 49336.80</td><td>22</td></tr><tr><td>49336.80 - 61667.00</td><td>62</td></tr><tr><td>98657.60 - 110987.80</td><td>39</td></tr><tr><td>110987.80 - 123318.00</td><td>40</td></tr><tr><td>123318.00 - 135648.20</td><td>33</td></tr><tr><td>135648.20 - 147978.40</td><td>227</td></tr><tr><td>147978.40 - 160308.60</td><td>292</td></tr><tr><td>160308.60 - 172638.80</td><td>558</td></tr><tr><td>172638.80 - 184969.00</td><td>1,063</td></tr><tr><td>184969.00 - 197299.20</td><td>1,611</td></tr><tr><td>197299.20 - 209629.40</td><td>2,464</td></tr><tr><td>209629.40 - 221959.60</td><td>2,689</td></tr><tr><td>221959.60 - 234289.80</td><td>3,760</td></tr><tr><td>234289.80 - 246620.00</td><td>5,287</td></tr></tbody></table></div></div></div><div aria-hidden="true" style="display: none; position: absolute; top: 80px; left: 160px; white-space: nowrap; font-family: Arial; font-size: 8px;">...</div><div></div></div></div></div><div class="sc-fuMreL iMulWe"><div class="sc-kPBEvI sc-hVcmJR crKJNX WpRnc">16</div><div class="sc-kPBEvI sc-hVcmJR sc-lgNkTe crKJNX WpRnc jUiEMz">247k</div></div></div><div class="sc-cUZYnF sc-lndvYQ sc-fdtKDa jHGSmY gaJHBk drwsBA"><h6 class="sc-dlMDgC sc-kfYoZR sc-hZwEmZ mLwaE lpaEYv iLTAmR">17194</h6><span class="sc-carFqZ sc-iTVJFM sc-jGFdNM jXJZzc oxVOu">unique values</span></div><div class="sc-cUZYnF sc-lndvYQ sc-iXVfIP jHGSmY gaJHBk kYfbkE"><div style="height: 70px; width: 100%;"><div id="numeric-chart-mO7pb667eE4A7AP4npSx/versions/eGPJ5NGY4TOcfHy1eCgO/files/data.csv/columns/DsSfiLtndSuYJksYCcjH" class="sc-hcnuUV kDoQpX" style="height: 70px; width: 100%;"><div style="position: relative;"><div dir="ltr" style="position: relative; width: 150px; height: 70px;"><div aria-label="A chart." style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;"><svg width="150" height="70" aria-label="A chart." style="overflow: hidden;"><defs id="_ABSTRACT_RENDERER_ID_14"><clippath id="_ABSTRACT_RENDERER_ID_15"><rect x="0" y="0" width="150" height="70"></rect></clippath></defs><rect x="0" y="0" width="150" height="70" stroke="none" stroke-width="0" fill="#ffffff"></rect><g><rect x="0" y="0" width="150" height="70" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g clip-path="url(https://www.kaggle.com/karangadiya/fifa19#_ABSTRACT_RENDERER_ID_15)"><g><rect x="0.5" y="62" width="8" height="7" stroke="none" stroke-width="0" fill="#007ba8"></rect><rect x="8.5" y="51" width="8" height="18" stroke="none" stroke-width="0" fill="#007ba8"></rect><rect x="16.5" y="12" width="8" height="57" stroke="none" stroke-width="0" fill="#007ba8"></rect><rect x="24.5" y="34" width="7" height="35" stroke="none" stroke-width="0" fill="#007ba8"></rect><rect x="31.5" y="2" width="8" height="67" stroke="none" stroke-width="0" fill="#007ba8"></rect><rect x="39.5" y="35" width="8" height="34" stroke="none" stroke-width="0" fill="#007ba8"></rect><rect x="47.5" y="1" width="8" height="68" stroke="none" stroke-width="0" fill="#007ba8"></rect><rect x="55.5" y="40" width="8" height="29" stroke="none" stroke-width="0" fill="#007ba8"></rect><rect x="63.5" y="17" width="8" height="52" stroke="none" stroke-width="0" fill="#007ba8"></rect><rect x="71.5" y="47" width="7" height="22" stroke="none" stroke-width="0" fill="#007ba8"></rect><rect x="78.5" y="52" width="8" height="17" stroke="none" stroke-width="0" fill="#007ba8"></rect><rect x="86.5" y="45" width="8" height="24" stroke="none" stroke-width="0" fill="#007ba8"></rect><rect x="94.5" y="60" width="8" height="9" stroke="none" stroke-width="0" fill="#007ba8"></rect><rect x="102.5" y="62" width="8" height="7" stroke="none" stroke-width="0" fill="#007ba8"></rect><rect x="110.5" y="67.82727272727273" width="8" height="1.672727272727272" stroke="none" stroke-width="0" fill="#007ba8"></rect><rect x="118.5" y="68" width="7" height="1" stroke="none" stroke-width="0" fill="#007ba8"></rect><rect x="125.5" y="69.23481152993348" width="8" height="0.5" stroke="none" stroke-width="0" fill="#007ba8"></rect><rect x="133.5" y="69.37760532150776" width="8" height="0.5" stroke="none" stroke-width="0" fill="#007ba8"></rect><rect x="141.5" y="69.43880266075388" width="8" height="0.5" stroke="none" stroke-width="0" fill="#007ba8"></rect></g><g><rect x="0" y="69" width="150" height="1" stroke="none" stroke-width="0" fill="#333333"></rect></g></g><g></g></g><g></g></svg><div aria-label="A tabular representation of the data in the chart." style="position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden;"><table><thead><tr><th>Label</th><th>Count</th></tr></thead><tbody><tr><td>16.00 - 17.45</td><td>331</td></tr><tr><td>17.45 - 18.90</td><td>732</td></tr><tr><td>18.90 - 20.35</td><td>2,264</td></tr><tr><td>20.35 - 21.80</td><td>1,423</td></tr><tr><td>21.80 - 23.25</td><td>2,672</td></tr><tr><td>23.25 - 24.70</td><td>1,358</td></tr><tr><td>24.70 - 26.15</td><td>2,706</td></tr><tr><td>26.15 - 27.60</td><td>1,162</td></tr><tr><td>27.60 - 29.05</td><td>2,060</td></tr><tr><td>29.05 - 30.50</td><td>917</td></tr><tr><td>30.50 - 31.95</td><td>707</td></tr><tr><td>31.95 - 33.40</td><td>982</td></tr><tr><td>33.40 - 34.85</td><td>404</td></tr><tr><td>34.85 - 36.30</td><td>323</td></tr><tr><td>36.30 - 37.75</td><td>82</td></tr><tr><td>37.75 - 39.20</td><td>62</td></tr><tr><td>39.20 - 40.65</td><td>13</td></tr><tr><td>40.65 - 42.10</td><td>6</td></tr><tr><td>43.55 - 45.00</td><td>3</td></tr></tbody></table></div></div></div><div aria-hidden="true" style="display: none; position: absolute; top: 80px; left: 160px; white-space: nowrap; font-family: Arial; font-size: 8px;">...</div><div></div></div></div></div><div class="sc-fuMreL iMulWe"><div class="sc-kPBEvI sc-hVcmJR crKJNX WpRnc">16</div><div class="sc-kPBEvI sc-hVcmJR sc-lgNkTe crKJNX WpRnc jUiEMz">45</div></div></div><div class="sc-cUZYnF sc-lndvYQ sc-fdtKDa jHGSmY gaJHBk drwsBA"><h6 class="sc-dlMDgC sc-kfYoZR sc-hZwEmZ mLwaE lpaEYv iLTAmR">18207</h6><span class="sc-carFqZ sc-iTVJFM sc-jGFdNM jXJZzc oxVOu">unique values</span></div><div class="sc-cUZYnF sc-cZblxl jHGSmY ebvCFH"><div class="sc-FRrlG PPKzT sc-iaLWqL cbDEOa" data-tip="true" data-for="tooltip_components_ed2ec457-4d3e-4e72-9e4c-437d828bd09a" currentitem="false"><div class="sc-gaCTVe kFPNzR"><span class="sc-carFqZ sc-iTVJFM sc-dWkuPp jXJZzc oxVOu ifyGiZ">England</span><span class="sc-carFqZ sc-iTVJFM sc-YSjbE jXJZzc oxVOu hSuEwd">9%</span></div><div class="__react_component_tooltip tba915043-1c36-4a0e-aeb2-56702d86f223 place-bottom type-dark" id="tooltip_components_ed2ec457-4d3e-4e72-9e4c-437d828bd09a" data-id="tooltip"><style aria-hidden="true">
+  	.tba915043-1c36-4a0e-aeb2-56702d86f223 {
+	    color: #fff;
+	    background: #222;
+	    border: 1px solid transparent;
+  	}
+
+  	.tba915043-1c36-4a0e-aeb2-56702d86f223.place-top {
+        margin-top: -10px;
+    }
+    .tba915043-1c36-4a0e-aeb2-56702d86f223.place-top::before {
+        border-top: 8px solid transparent;
+    }
+    .tba915043-1c36-4a0e-aeb2-56702d86f223.place-top::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        bottom: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-top-color: #222;
+        border-top-style: solid;
+        border-top-width: 6px;
+    }
+
+    .tba915043-1c36-4a0e-aeb2-56702d86f223.place-bottom {
+        margin-top: 10px;
+    }
+    .tba915043-1c36-4a0e-aeb2-56702d86f223.place-bottom::before {
+        border-bottom: 8px solid transparent;
+    }
+    .tba915043-1c36-4a0e-aeb2-56702d86f223.place-bottom::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        top: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-bottom-color: #222;
+        border-bottom-style: solid;
+        border-bottom-width: 6px;
+    }
+
+    .tba915043-1c36-4a0e-aeb2-56702d86f223.place-left {
+        margin-left: -10px;
+    }
+    .tba915043-1c36-4a0e-aeb2-56702d86f223.place-left::before {
+        border-left: 8px solid transparent;
+    }
+    .tba915043-1c36-4a0e-aeb2-56702d86f223.place-left::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        right: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-left-color: #222;
+        border-left-style: solid;
+        border-left-width: 6px;
+    }
+
+    .tba915043-1c36-4a0e-aeb2-56702d86f223.place-right {
+        margin-left: 10px;
+    }
+    .tba915043-1c36-4a0e-aeb2-56702d86f223.place-right::before {
+        border-right: 8px solid transparent;
+    }
+    .tba915043-1c36-4a0e-aeb2-56702d86f223.place-right::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        left: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-right-color: #222;
+        border-right-style: solid;
+        border-right-width: 6px;
+    }
+  </style><div class="sc-fXazdy gZkvye">England</div></div></div><div class="sc-FRrlG PPKzT sc-iaLWqL cbDEOa" data-tip="true" data-for="tooltip_components_266d101f-627f-4370-a6b2-b7bb152b05df" currentitem="false"><div class="sc-gaCTVe kFPNzR"><span class="sc-carFqZ sc-iTVJFM sc-dWkuPp jXJZzc oxVOu ifyGiZ">Germany</span><span class="sc-carFqZ sc-iTVJFM sc-YSjbE jXJZzc oxVOu hSuEwd">7%</span></div><div class="__react_component_tooltip t4d54356c-869f-44cd-ba56-f311e46b6cca place-bottom type-dark" id="tooltip_components_266d101f-627f-4370-a6b2-b7bb152b05df" data-id="tooltip"><style aria-hidden="true">
+  	.t4d54356c-869f-44cd-ba56-f311e46b6cca {
+	    color: #fff;
+	    background: #222;
+	    border: 1px solid transparent;
+  	}
+
+  	.t4d54356c-869f-44cd-ba56-f311e46b6cca.place-top {
+        margin-top: -10px;
+    }
+    .t4d54356c-869f-44cd-ba56-f311e46b6cca.place-top::before {
+        border-top: 8px solid transparent;
+    }
+    .t4d54356c-869f-44cd-ba56-f311e46b6cca.place-top::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        bottom: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-top-color: #222;
+        border-top-style: solid;
+        border-top-width: 6px;
+    }
+
+    .t4d54356c-869f-44cd-ba56-f311e46b6cca.place-bottom {
+        margin-top: 10px;
+    }
+    .t4d54356c-869f-44cd-ba56-f311e46b6cca.place-bottom::before {
+        border-bottom: 8px solid transparent;
+    }
+    .t4d54356c-869f-44cd-ba56-f311e46b6cca.place-bottom::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        top: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-bottom-color: #222;
+        border-bottom-style: solid;
+        border-bottom-width: 6px;
+    }
+
+    .t4d54356c-869f-44cd-ba56-f311e46b6cca.place-left {
+        margin-left: -10px;
+    }
+    .t4d54356c-869f-44cd-ba56-f311e46b6cca.place-left::before {
+        border-left: 8px solid transparent;
+    }
+    .t4d54356c-869f-44cd-ba56-f311e46b6cca.place-left::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        right: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-left-color: #222;
+        border-left-style: solid;
+        border-left-width: 6px;
+    }
+
+    .t4d54356c-869f-44cd-ba56-f311e46b6cca.place-right {
+        margin-left: 10px;
+    }
+    .t4d54356c-869f-44cd-ba56-f311e46b6cca.place-right::before {
+        border-right: 8px solid transparent;
+    }
+    .t4d54356c-869f-44cd-ba56-f311e46b6cca.place-right::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        left: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-right-color: #222;
+        border-right-style: solid;
+        border-right-width: 6px;
+    }
+  </style><div class="sc-fXazdy gZkvye">Germany</div></div></div><div class="sc-gaCTVe kFPNzR"><span class="sc-carFqZ sc-iTVJFM sc-dWkuPp jXJZzc oxVOu Mtsai">Other (15347)</span><span class="sc-carFqZ sc-iTVJFM sc-YSjbE jXJZzc oxVOu erXiBL">84%</span></div></div><div class="sc-cUZYnF sc-cZblxl jHGSmY ebvCFH"><div class="sc-FRrlG PPKzT sc-iaLWqL cbDEOa" data-tip="true" data-for="tooltip_components_0b99c39d-255e-4cc4-b399-93f6fac111d5" currentitem="false"><div class="sc-gaCTVe kFPNzR"><span class="sc-carFqZ sc-iTVJFM sc-dWkuPp jXJZzc oxVOu ifyGiZ">https://cdn.sofifa.org/flags/14.png</span><span class="sc-carFqZ sc-iTVJFM sc-YSjbE jXJZzc oxVOu hSuEwd">9%</span></div><div class="__react_component_tooltip t9d6ba107-6333-4011-8d7d-8132878bfef2 place-bottom type-dark" id="tooltip_components_0b99c39d-255e-4cc4-b399-93f6fac111d5" data-id="tooltip"><style aria-hidden="true">
+  	.t9d6ba107-6333-4011-8d7d-8132878bfef2 {
+	    color: #fff;
+	    background: #222;
+	    border: 1px solid transparent;
+  	}
+
+  	.t9d6ba107-6333-4011-8d7d-8132878bfef2.place-top {
+        margin-top: -10px;
+    }
+    .t9d6ba107-6333-4011-8d7d-8132878bfef2.place-top::before {
+        border-top: 8px solid transparent;
+    }
+    .t9d6ba107-6333-4011-8d7d-8132878bfef2.place-top::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        bottom: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-top-color: #222;
+        border-top-style: solid;
+        border-top-width: 6px;
+    }
+
+    .t9d6ba107-6333-4011-8d7d-8132878bfef2.place-bottom {
+        margin-top: 10px;
+    }
+    .t9d6ba107-6333-4011-8d7d-8132878bfef2.place-bottom::before {
+        border-bottom: 8px solid transparent;
+    }
+    .t9d6ba107-6333-4011-8d7d-8132878bfef2.place-bottom::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        top: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-bottom-color: #222;
+        border-bottom-style: solid;
+        border-bottom-width: 6px;
+    }
+
+    .t9d6ba107-6333-4011-8d7d-8132878bfef2.place-left {
+        margin-left: -10px;
+    }
+    .t9d6ba107-6333-4011-8d7d-8132878bfef2.place-left::before {
+        border-left: 8px solid transparent;
+    }
+    .t9d6ba107-6333-4011-8d7d-8132878bfef2.place-left::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        right: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-left-color: #222;
+        border-left-style: solid;
+        border-left-width: 6px;
+    }
+
+    .t9d6ba107-6333-4011-8d7d-8132878bfef2.place-right {
+        margin-left: 10px;
+    }
+    .t9d6ba107-6333-4011-8d7d-8132878bfef2.place-right::before {
+        border-right: 8px solid transparent;
+    }
+    .t9d6ba107-6333-4011-8d7d-8132878bfef2.place-right::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        left: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-right-color: #222;
+        border-right-style: solid;
+        border-right-width: 6px;
+    }
+  </style><div class="sc-fXazdy gZkvye">https://cdn.sofifa.org/flags/14.png</div></div></div><div class="sc-FRrlG PPKzT sc-iaLWqL cbDEOa" data-tip="true" data-for="tooltip_components_7579e128-c93d-4aaa-8f68-34e0d6a21e7c" currentitem="false"><div class="sc-gaCTVe kFPNzR"><span class="sc-carFqZ sc-iTVJFM sc-dWkuPp jXJZzc oxVOu ifyGiZ">https://cdn.sofifa.org/flags/21.png</span><span class="sc-carFqZ sc-iTVJFM sc-YSjbE jXJZzc oxVOu hSuEwd">7%</span></div><div class="__react_component_tooltip t43a5d2ad-a8f6-4241-9c82-a835ed1a3b06 place-bottom type-dark" id="tooltip_components_7579e128-c93d-4aaa-8f68-34e0d6a21e7c" data-id="tooltip"><style aria-hidden="true">
+  	.t43a5d2ad-a8f6-4241-9c82-a835ed1a3b06 {
+	    color: #fff;
+	    background: #222;
+	    border: 1px solid transparent;
+  	}
+
+  	.t43a5d2ad-a8f6-4241-9c82-a835ed1a3b06.place-top {
+        margin-top: -10px;
+    }
+    .t43a5d2ad-a8f6-4241-9c82-a835ed1a3b06.place-top::before {
+        border-top: 8px solid transparent;
+    }
+    .t43a5d2ad-a8f6-4241-9c82-a835ed1a3b06.place-top::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        bottom: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-top-color: #222;
+        border-top-style: solid;
+        border-top-width: 6px;
+    }
+
+    .t43a5d2ad-a8f6-4241-9c82-a835ed1a3b06.place-bottom {
+        margin-top: 10px;
+    }
+    .t43a5d2ad-a8f6-4241-9c82-a835ed1a3b06.place-bottom::before {
+        border-bottom: 8px solid transparent;
+    }
+    .t43a5d2ad-a8f6-4241-9c82-a835ed1a3b06.place-bottom::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        top: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-bottom-color: #222;
+        border-bottom-style: solid;
+        border-bottom-width: 6px;
+    }
+
+    .t43a5d2ad-a8f6-4241-9c82-a835ed1a3b06.place-left {
+        margin-left: -10px;
+    }
+    .t43a5d2ad-a8f6-4241-9c82-a835ed1a3b06.place-left::before {
+        border-left: 8px solid transparent;
+    }
+    .t43a5d2ad-a8f6-4241-9c82-a835ed1a3b06.place-left::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        right: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-left-color: #222;
+        border-left-style: solid;
+        border-left-width: 6px;
+    }
+
+    .t43a5d2ad-a8f6-4241-9c82-a835ed1a3b06.place-right {
+        margin-left: 10px;
+    }
+    .t43a5d2ad-a8f6-4241-9c82-a835ed1a3b06.place-right::before {
+        border-right: 8px solid transparent;
+    }
+    .t43a5d2ad-a8f6-4241-9c82-a835ed1a3b06.place-right::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        left: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-right-color: #222;
+        border-right-style: solid;
+        border-right-width: 6px;
+    }
+  </style><div class="sc-fXazdy gZkvye">https://cdn.sofifa.org/flags/21.png</div></div></div><div class="sc-gaCTVe kFPNzR"><span class="sc-carFqZ sc-iTVJFM sc-dWkuPp jXJZzc oxVOu Mtsai">Other (15347)</span><span class="sc-carFqZ sc-iTVJFM sc-YSjbE jXJZzc oxVOu erXiBL">84%</span></div></div><div class="sc-cUZYnF sc-lndvYQ sc-iXVfIP jHGSmY gaJHBk kYfbkE"><div style="height: 70px; width: 100%;"><div id="numeric-chart-mO7pb667eE4A7AP4npSx/versions/eGPJ5NGY4TOcfHy1eCgO/files/data.csv/columns/mfIzn3ipofuvf38fr2Oj" class="sc-hcnuUV kDoQpX" style="height: 70px; width: 100%;"><div style="position: relative;"><div dir="ltr" style="position: relative; width: 150px; height: 70px;"><div aria-label="A chart." style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;"><svg width="150" height="70" aria-label="A chart." style="overflow: hidden;"><defs id="_ABSTRACT_RENDERER_ID_16"><clippath id="_ABSTRACT_RENDERER_ID_17"><rect x="0" y="0" width="150" height="70"></rect></clippath></defs><rect x="0" y="0" width="150" height="70" stroke="none" stroke-width="0" fill="#ffffff"></rect><g><rect x="0" y="0" width="150" height="70" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g clip-path="url(https://www.kaggle.com/karangadiya/fifa19#_ABSTRACT_RENDERER_ID_17)"><g><rect x="0.5" y="68.56768642447419" width="7" height="0.9323135755258107" stroke="none" stroke-width="0" fill="#007ba8"></rect><rect x="7.5" y="67" width="8" height="2" stroke="none" stroke-width="0" fill="#007ba8"></rect><rect x="15.5" y="59" width="7" height="10" stroke="none" stroke-width="0" fill="#007ba8"></rect><rect x="22.5" y="59" width="8" height="10" stroke="none" stroke-width="0" fill="#007ba8"></rect><rect x="30.5" y="54" width="7" height="15" stroke="none" stroke-width="0" fill="#007ba8"></rect><rect x="37.5" y="34" width="8" height="35" stroke="none" stroke-width="0" fill="#007ba8"></rect><rect x="45.5" y="35" width="7" height="34" stroke="none" stroke-width="0" fill="#007ba8"></rect><rect x="52.5" y="1" width="8" height="68" stroke="none" stroke-width="0" fill="#007ba8"></rect><rect x="60.5" y="20" width="7" height="49" stroke="none" stroke-width="0" fill="#007ba8"></rect><rect x="67.5" y="26" width="8" height="43" stroke="none" stroke-width="0" fill="#007ba8"></rect><rect x="75.5" y="17" width="7" height="52" stroke="none" stroke-width="0" fill="#007ba8"></rect><rect x="82.5" y="45" width="7" height="24" stroke="none" stroke-width="0" fill="#007ba8"></rect><rect x="89.5" y="44" width="8" height="25" stroke="none" stroke-width="0" fill="#007ba8"></rect><rect x="97.5" y="63" width="7" height="6" stroke="none" stroke-width="0" fill="#007ba8"></rect><rect x="104.5" y="65" width="8" height="4" stroke="none" stroke-width="0" fill="#007ba8"></rect><rect x="112.5" y="65" width="7" height="4" stroke="none" stroke-width="0" fill="#007ba8"></rect><rect x="119.5" y="68.53250478011472" width="8" height="0.9674952198852793" stroke="none" stroke-width="0" fill="#007ba8"></rect><rect x="127.5" y="68.77877629063099" width="7" height="0.7212237093690135" stroke="none" stroke-width="0" fill="#007ba8"></rect><rect x="134.5" y="69.30650095602294" width="8" height="0.5" stroke="none" stroke-width="0" fill="#007ba8"></rect><rect x="142.5" y="69.4472275334608" width="7" height="0.5" stroke="none" stroke-width="0" fill="#007ba8"></rect></g><g><rect x="0" y="69" width="150" height="1" stroke="none" stroke-width="0" fill="#333333"></rect></g></g><g></g></g><g></g></svg><div aria-label="A tabular representation of the data in the chart." style="position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden;"><table><thead><tr><th>Label</th><th>Count</th></tr></thead><tbody><tr><td>46.00 - 48.40</td><td>53</td></tr><tr><td>48.40 - 50.80</td><td>139</td></tr><tr><td>50.80 - 53.20</td><td>483</td></tr><tr><td>53.20 - 55.60</td><td>515</td></tr><tr><td>55.60 - 58.00</td><td>745</td></tr><tr><td>58.00 - 60.40</td><td>1,618</td></tr><tr><td>60.40 - 62.80</td><td>1,589</td></tr><tr><td>62.80 - 65.20</td><td>3,138</td></tr><tr><td>65.20 - 67.60</td><td>2,281</td></tr><tr><td>67.60 - 70.00</td><td>2,008</td></tr><tr><td>70.00 - 72.40</td><td>2,425</td></tr><tr><td>72.40 - 74.80</td><td>1,145</td></tr><tr><td>74.80 - 77.20</td><td>1,174</td></tr><tr><td>77.20 - 79.60</td><td>339</td></tr><tr><td>79.60 - 82.00</td><td>236</td></tr><tr><td>82.00 - 84.40</td><td>209</td></tr><tr><td>84.40 - 86.80</td><td>55</td></tr><tr><td>86.80 - 89.20</td><td>41</td></tr><tr><td>89.20 - 91.60</td><td>11</td></tr><tr><td>91.60 - 94.00</td><td>3</td></tr></tbody></table></div></div></div><div aria-hidden="true" style="display: none; position: absolute; top: 80px; left: 160px; white-space: nowrap; font-family: Arial; font-size: 8px;">...</div><div></div></div></div></div><div class="sc-fuMreL iMulWe"><div class="sc-kPBEvI sc-hVcmJR crKJNX WpRnc">46</div><div class="sc-kPBEvI sc-hVcmJR sc-lgNkTe crKJNX WpRnc jUiEMz">94</div></div></div><div class="sc-cUZYnF sc-lndvYQ sc-iXVfIP jHGSmY gaJHBk kYfbkE"><div style="height: 70px; width: 100%;"><div id="numeric-chart-mO7pb667eE4A7AP4npSx/versions/eGPJ5NGY4TOcfHy1eCgO/files/data.csv/columns/5qbtpqTebtQHKJNup9LB" class="sc-hcnuUV kDoQpX" style="height: 70px; width: 100%;"><div style="position: relative;"><div dir="ltr" style="position: relative; width: 150px; height: 70px;"><div aria-label="A chart." style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;"><svg width="150" height="70" aria-label="A chart." style="overflow: hidden;"><defs id="_ABSTRACT_RENDERER_ID_18"><clippath id="_ABSTRACT_RENDERER_ID_19"><rect x="0" y="0" width="150" height="70"></rect></clippath></defs><rect x="0" y="0" width="150" height="70" stroke="none" stroke-width="0" fill="#ffffff"></rect><g><rect x="0" y="0" width="150" height="70" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g clip-path="url(https://www.kaggle.com/karangadiya/fifa19#_ABSTRACT_RENDERER_ID_19)"><g><rect x="0.5" y="69.43313143549364" width="7" height="0.5" stroke="none" stroke-width="0" fill="#007ba8"></rect><rect x="7.5" y="69.29939430648092" width="8" height="0.5" stroke="none" stroke-width="0" fill="#007ba8"></rect><rect x="15.5" y="68.98176862507572" width="7" height="0.5182313749242837" stroke="none" stroke-width="0" fill="#007ba8"></rect><rect x="22.5" y="68.31308298001211" width="8" height="1.186917019987888" stroke="none" stroke-width="0" fill="#007ba8"></rect><rect x="30.5" y="65.95596608116293" width="7" height="3.544033918837073" stroke="none" stroke-width="0" fill="#007ba8"></rect><rect x="37.5" y="53" width="8" height="16" stroke="none" stroke-width="0" fill="#007ba8"></rect><rect x="45.5" y="45" width="7" height="24" stroke="none" stroke-width="0" fill="#007ba8"></rect><rect x="52.5" y="33" width="8" height="36" stroke="none" stroke-width="0" fill="#007ba8"></rect><rect x="60.5" y="1" width="7" height="68" stroke="none" stroke-width="0" fill="#007ba8"></rect><rect x="67.5" y="21" width="8" height="48" stroke="none" stroke-width="0" fill="#007ba8"></rect><rect x="75.5" y="25" width="7" height="44" stroke="none" stroke-width="0" fill="#007ba8"></rect><rect x="82.5" y="13" width="7" height="56" stroke="none" stroke-width="0" fill="#007ba8"></rect><rect x="89.5" y="44" width="8" height="25" stroke="none" stroke-width="0" fill="#007ba8"></rect><rect x="97.5" y="50" width="7" height="19" stroke="none" stroke-width="0" fill="#007ba8"></rect><rect x="104.5" y="54" width="8" height="15" stroke="none" stroke-width="0" fill="#007ba8"></rect><rect x="112.5" y="63" width="7" height="6" stroke="none" stroke-width="0" fill="#007ba8"></rect><rect x="119.5" y="67" width="8" height="2" stroke="none" stroke-width="0" fill="#007ba8"></rect><rect x="127.5" y="67.79485160508781" width="7" height="1.705148394912186" stroke="none" stroke-width="0" fill="#007ba8"></rect><rect x="134.5" y="69.14894003634161" width="8" height="0.5" stroke="none" stroke-width="0" fill="#007ba8"></rect><rect x="142.5" y="69.36626287098728" width="7" height="0.5" stroke="none" stroke-width="0" fill="#007ba8"></rect></g><g><rect x="0" y="69" width="150" height="1" stroke="none" stroke-width="0" fill="#333333"></rect></g></g><g></g></g><g></g></svg><div aria-label="A tabular representation of the data in the chart." style="position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden;"><table><thead><tr><th>Label</th><th>Count</th></tr></thead><tbody><tr><td>48.00 - 50.35</td><td>4</td></tr><tr><td>50.35 - 52.70</td><td>12</td></tr><tr><td>52.70 - 55.05</td><td>31</td></tr><tr><td>55.05 - 57.40</td><td>71</td></tr><tr><td>57.40 - 59.75</td><td>212</td></tr><tr><td>59.75 - 62.10</td><td>795</td></tr><tr><td>62.10 - 64.45</td><td>1,209</td></tr><tr><td>64.45 - 66.80</td><td>1,764</td></tr><tr><td>66.80 - 69.15</td><td>3,302</td></tr><tr><td>69.15 - 71.50</td><td>2,343</td></tr><tr><td>71.50 - 73.85</td><td>2,173</td></tr><tr><td>73.85 - 76.20</td><td>2,735</td></tr><tr><td>76.20 - 78.55</td><td>1,245</td></tr><tr><td>78.55 - 80.90</td><td>940</td></tr><tr><td>80.90 - 83.25</td><td>777</td></tr><tr><td>83.25 - 85.60</td><td>320</td></tr><tr><td>85.60 - 87.95</td><td>143</td></tr><tr><td>87.95 - 90.30</td><td>102</td></tr><tr><td>90.30 - 92.65</td><td>21</td></tr><tr><td>92.65 - 95.00</td><td>8</td></tr></tbody></table></div></div></div><div aria-hidden="true" style="display: none; position: absolute; top: 80px; left: 160px; white-space: nowrap; font-family: Arial; font-size: 8px;">...</div><div></div></div></div></div><div class="sc-fuMreL iMulWe"><div class="sc-kPBEvI sc-hVcmJR crKJNX WpRnc">48</div><div class="sc-kPBEvI sc-hVcmJR sc-lgNkTe crKJNX WpRnc jUiEMz">95</div></div></div><div class="sc-cUZYnF sc-cZblxl jHGSmY ebvCFH"><div class="sc-gaCTVe kFPNzR"><span class="sc-carFqZ sc-iTVJFM sc-dWkuPp jXJZzc oxVOu fZwIEP">[null]</span><span class="sc-carFqZ sc-iTVJFM sc-YSjbE jXJZzc oxVOu gPHCJm">1%</span></div><div class="sc-FRrlG PPKzT sc-iaLWqL cbDEOa" data-tip="true" data-for="tooltip_components_03965654-5ebd-4b43-adec-814e1ac5001c" currentitem="false"><div class="sc-gaCTVe kFPNzR"><span class="sc-carFqZ sc-iTVJFM sc-dWkuPp jXJZzc oxVOu ifyGiZ">FC Barcelona</span><span class="sc-carFqZ sc-iTVJFM sc-YSjbE jXJZzc oxVOu hSuEwd">0%</span></div><div class="__react_component_tooltip ta4b06e67-02ba-4695-9a34-02c6b2aefa83 place-bottom type-dark" id="tooltip_components_03965654-5ebd-4b43-adec-814e1ac5001c" data-id="tooltip"><style aria-hidden="true">
+  	.ta4b06e67-02ba-4695-9a34-02c6b2aefa83 {
+	    color: #fff;
+	    background: #222;
+	    border: 1px solid transparent;
+  	}
+
+  	.ta4b06e67-02ba-4695-9a34-02c6b2aefa83.place-top {
+        margin-top: -10px;
+    }
+    .ta4b06e67-02ba-4695-9a34-02c6b2aefa83.place-top::before {
+        border-top: 8px solid transparent;
+    }
+    .ta4b06e67-02ba-4695-9a34-02c6b2aefa83.place-top::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        bottom: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-top-color: #222;
+        border-top-style: solid;
+        border-top-width: 6px;
+    }
+
+    .ta4b06e67-02ba-4695-9a34-02c6b2aefa83.place-bottom {
+        margin-top: 10px;
+    }
+    .ta4b06e67-02ba-4695-9a34-02c6b2aefa83.place-bottom::before {
+        border-bottom: 8px solid transparent;
+    }
+    .ta4b06e67-02ba-4695-9a34-02c6b2aefa83.place-bottom::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        top: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-bottom-color: #222;
+        border-bottom-style: solid;
+        border-bottom-width: 6px;
+    }
+
+    .ta4b06e67-02ba-4695-9a34-02c6b2aefa83.place-left {
+        margin-left: -10px;
+    }
+    .ta4b06e67-02ba-4695-9a34-02c6b2aefa83.place-left::before {
+        border-left: 8px solid transparent;
+    }
+    .ta4b06e67-02ba-4695-9a34-02c6b2aefa83.place-left::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        right: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-left-color: #222;
+        border-left-style: solid;
+        border-left-width: 6px;
+    }
+
+    .ta4b06e67-02ba-4695-9a34-02c6b2aefa83.place-right {
+        margin-left: 10px;
+    }
+    .ta4b06e67-02ba-4695-9a34-02c6b2aefa83.place-right::before {
+        border-right: 8px solid transparent;
+    }
+    .ta4b06e67-02ba-4695-9a34-02c6b2aefa83.place-right::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        left: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-right-color: #222;
+        border-right-style: solid;
+        border-right-width: 6px;
+    }
+  </style><div class="sc-fXazdy gZkvye">FC Barcelona</div></div></div><div class="sc-gaCTVe kFPNzR"><span class="sc-carFqZ sc-iTVJFM sc-dWkuPp jXJZzc oxVOu Mtsai">Other (17933)</span><span class="sc-carFqZ sc-iTVJFM sc-YSjbE jXJZzc oxVOu erXiBL">98%</span></div></div></div></div><div><span class="sc-cTJkRt sc-jNnpgg bImBbN jIfccS"><div class="sc-hYWzPi sc-bCcuKu bvjnIw gLZCfu"><div>0</div><div>158023</div><div>L. Messi</div><div>31</div><div>https://cdn.sofifa.org/players/4/19/158023.png</div><div>Argentina</div><div>https://cdn.sofifa.org/flags/52.png</div><div>94</div><div>94</div><div>FC Barcelona</div></div></span><span class="sc-cTJkRt sc-jNnpgg bImBbN jIfccS"><div class="sc-hYWzPi sc-bCcuKu bvjnIw gLZCfu"><div>1</div><div>20801</div><div>Cristiano Ronaldo</div><div>33</div><div>https://cdn.sofifa.org/players/4/19/20801.png</div><div>Portugal</div><div>https://cdn.sofifa.org/flags/38.png</div><div>94</div><div>94</div><div>Juventus</div></div></span><span class="sc-cTJkRt sc-jNnpgg bImBbN jIfccS"><div class="sc-hYWzPi sc-bCcuKu bvjnIw gLZCfu"><div>2</div><div>190871</div><div>Neymar Jr</div><div>26</div><div>https://cdn.sofifa.org/players/4/19/190871.png</div><div>Brazil</div><div>https://cdn.sofifa.org/flags/54.png</div><div>92</div><div>93</div><div>Paris Saint-Germain</div></div></span><span class="sc-cTJkRt sc-jNnpgg bImBbN jIfccS"><div class="sc-hYWzPi sc-bCcuKu bvjnIw gLZCfu"><div>3</div><div>193080</div><div>De Gea</div><div>27</div><div>https://cdn.sofifa.org/players/4/19/193080.png</div><div>Spain</div><div>https://cdn.sofifa.org/flags/45.png</div><div>91</div><div>93</div><div>Manchester United</div></div></span><span class="sc-cTJkRt sc-jNnpgg bImBbN jIfccS"><div class="sc-hYWzPi sc-bCcuKu bvjnIw gLZCfu"><div>4</div><div>192985</div><div>K. De Bruyne</div><div>27</div><div>https://cdn.sofifa.org/players/4/19/192985.png</div><div>Belgium</div><div>https://cdn.sofifa.org/flags/7.png</div><div>91</div><div>92</div><div>Manchester City</div></div></span><span class="sc-cTJkRt sc-jNnpgg bImBbN jIfccS"><div class="sc-hYWzPi sc-bCcuKu bvjnIw gLZCfu"><div>5</div><div>183277</div><div>E. Hazard</div><div>27</div><div>https://cdn.sofifa.org/players/4/19/183277.png</div><div>Belgium</div><div>https://cdn.sofifa.org/flags/7.png</div><div>91</div><div>91</div><div>Chelsea</div></div></span><span class="sc-cTJkRt sc-jNnpgg bImBbN jIfccS"><div class="sc-hYWzPi sc-bCcuKu bvjnIw gLZCfu"><div>6</div><div>177003</div><div>L. Modrić</div><div>32</div><div>https://cdn.sofifa.org/players/4/19/177003.png</div><div>Croatia</div><div>https://cdn.sofifa.org/flags/10.png</div><div>91</div><div>91</div><div>Real Madrid</div></div></span><span class="sc-cTJkRt sc-jNnpgg bImBbN jIfccS"><div class="sc-hYWzPi sc-bCcuKu bvjnIw gLZCfu"><div>7</div><div>176580</div><div>L. Suárez</div><div>31</div><div>https://cdn.sofifa.org/players/4/19/176580.png</div><div>Uruguay</div><div>https://cdn.sofifa.org/flags/60.png</div><div>91</div><div>91</div><div>FC Barcelona</div></div></span><span class="sc-cTJkRt sc-jNnpgg bImBbN jIfccS"><div class="sc-hYWzPi sc-bCcuKu bvjnIw gLZCfu"><div>8</div><div>155862</div><div>Sergio Ramos</div><div>32</div><div>https://cdn.sofifa.org/players/4/19/155862.png</div><div>Spain</div><div>https://cdn.sofifa.org/flags/45.png</div><div>91</div><div>91</div><div>Real Madrid</div></div></span><span class="sc-cTJkRt sc-jNnpgg bImBbN jIfccS"><div class="sc-hYWzPi sc-bCcuKu bvjnIw gLZCfu"><div>9</div><div>200389</div><div>J. Oblak</div><div>25</div><div>https://cdn.sofifa.org/players/4/19/200389.png</div><div>Slovenia</div><div>https://cdn.sofifa.org/flags/44.png</div><div>90</div><div>93</div><div>Atlético Madrid</div></div></span><span class="sc-cTJkRt sc-jNnpgg bImBbN jIfccS"><div class="sc-hYWzPi sc-bCcuKu bvjnIw gLZCfu"><div>10</div><div>188545</div><div>R. Lewandowski</div><div>29</div><div>https://cdn.sofifa.org/players/4/19/188545.png</div><div>Poland</div><div>https://cdn.sofifa.org/flags/37.png</div><div>90</div><div>90</div><div>FC Bayern München</div></div></span><span class="sc-cTJkRt sc-jNnpgg bImBbN jIfccS"><div class="sc-hYWzPi sc-bCcuKu bvjnIw gLZCfu"><div>11</div><div>182521</div><div>T. Kroos</div><div>28</div><div>https://cdn.sofifa.org/players/4/19/182521.png</div><div>Germany</div><div>https://cdn.sofifa.org/flags/21.png</div><div>90</div><div>90</div><div>Real Madrid</div></div></span><span class="sc-cTJkRt sc-jNnpgg bImBbN jIfccS"><div class="sc-hYWzPi sc-bCcuKu bvjnIw gLZCfu"><div>12</div><div>182493</div><div>D. Godín</div><div>32</div><div>https://cdn.sofifa.org/players/4/19/182493.png</div><div>Uruguay</div><div>https://cdn.sofifa.org/flags/60.png</div><div>90</div><div>90</div><div>Atlético Madrid</div></div></span><span class="sc-cTJkRt sc-jNnpgg bImBbN jIfccS"><div class="sc-hYWzPi sc-bCcuKu bvjnIw gLZCfu"><div>13</div><div>168542</div><div>David Silva</div><div>32</div><div>https://cdn.sofifa.org/players/4/19/168542.png</div><div>Spain</div><div>https://cdn.sofifa.org/flags/45.png</div><div>90</div><div>90</div><div>Manchester City</div></div></span><span class="sc-cTJkRt sc-jNnpgg bImBbN jIfccS"><div class="sc-hYWzPi sc-bCcuKu bvjnIw gLZCfu"><div>14</div><div>215914</div><div>N. Kanté</div><div>27</div><div>https://cdn.sofifa.org/players/4/19/215914.png</div><div>France</div><div>https://cdn.sofifa.org/flags/18.png</div><div>89</div><div>90</div><div>Chelsea</div></div></span><span class="sc-cTJkRt sc-jNnpgg bImBbN jIfccS"><div class="sc-hYWzPi sc-bCcuKu bvjnIw gLZCfu"><div>15</div><div>211110</div><div>P. Dybala</div><div>24</div><div>https://cdn.sofifa.org/players/4/19/211110.png</div><div>Argentina</div><div>https://cdn.sofifa.org/flags/52.png</div><div>89</div><div>94</div><div>Juventus</div></div></span><span class="sc-cTJkRt sc-jNnpgg bImBbN jIfccS"><div class="sc-hYWzPi sc-bCcuKu bvjnIw gLZCfu"><div>16</div><div>202126</div><div>H. Kane</div><div>24</div><div>https://cdn.sofifa.org/players/4/19/202126.png</div><div>England</div><div>https://cdn.sofifa.org/flags/14.png</div><div>89</div><div>91</div><div>Tottenham Hotspur</div></div></span><span class="sc-cTJkRt sc-jNnpgg bImBbN jIfccS"><div class="sc-hYWzPi sc-bCcuKu bvjnIw gLZCfu"><div>17</div><div>194765</div><div>A. Griezmann</div><div>27</div><div>https://cdn.sofifa.org/players/4/19/194765.png</div><div>France</div><div>https://cdn.sofifa.org/flags/18.png</div><div>89</div><div>90</div><div>Atlético Madrid</div></div></span><span class="sc-cTJkRt sc-jNnpgg bImBbN jIfccS"><div class="sc-hYWzPi sc-bCcuKu bvjnIw gLZCfu"><div>18</div><div>192448</div><div>M. ter Stegen</div><div>26</div><div>https://cdn.sofifa.org/players/4/19/192448.png</div><div>Germany</div><div>https://cdn.sofifa.org/flags/21.png</div><div>89</div><div>92</div><div>FC Barcelona</div></div></span><span class="sc-cTJkRt sc-jNnpgg bImBbN jIfccS"><div class="sc-hYWzPi sc-bCcuKu bvjnIw gLZCfu"><div>19</div><div>192119</div><div>T. Courtois</div><div>26</div><div>https://cdn.sofifa.org/players/4/19/192119.png</div><div>Belgium</div><div>https://cdn.sofifa.org/flags/7.png</div><div>89</div><div>90</div><div>Real Madrid</div></div></span><span class="sc-cTJkRt sc-jNnpgg bImBbN jIfccS"><div class="sc-hYWzPi sc-bCcuKu bvjnIw gLZCfu"><div>20</div><div>189511</div><div>Sergio Busquets</div><div>29</div><div>https://cdn.sofifa.org/players/4/19/189511.png</div><div>Spain</div><div>https://cdn.sofifa.org/flags/45.png</div><div>89</div><div>89</div><div>FC Barcelona</div></div></span><span class="sc-cTJkRt sc-jNnpgg bImBbN jIfccS"><div class="sc-hYWzPi sc-bCcuKu bvjnIw gLZCfu"><div>21</div><div>179813</div><div>E. Cavani</div><div>31</div><div>https://cdn.sofifa.org/players/4/19/179813.png</div><div>Uruguay</div><div>https://cdn.sofifa.org/flags/60.png</div><div>89</div><div>89</div><div>Paris Saint-Germain</div></div></span><span class="sc-cTJkRt sc-jNnpgg bImBbN jIfccS"><div class="sc-hYWzPi sc-bCcuKu bvjnIw gLZCfu"><div>22</div><div>167495</div><div>M. Neuer</div><div>32</div><div>https://cdn.sofifa.org/players/4/19/167495.png</div><div>Germany</div><div>https://cdn.sofifa.org/flags/21.png</div><div>89</div><div>89</div><div>FC Bayern München</div></div></span><span class="sc-cTJkRt sc-jNnpgg bImBbN jIfccS"><div class="sc-hYWzPi sc-bCcuKu bvjnIw gLZCfu"><div>23</div><div>153079</div><div>S. Agüero</div><div>30</div><div>https://cdn.sofifa.org/players/4/19/153079.png</div><div>Argentina</div><div>https://cdn.sofifa.org/flags/52.png</div><div>89</div><div>89</div><div>Manchester City</div></div></span><span class="sc-cTJkRt sc-jNnpgg bImBbN jIfccS"><div class="sc-hYWzPi sc-bCcuKu bvjnIw gLZCfu"><div>24</div><div>138956</div><div>G. Chiellini</div><div>33</div><div>https://cdn.sofifa.org/players/4/19/138956.png</div><div>Italy</div><div>https://cdn.sofifa.org/flags/27.png</div><div>89</div><div>89</div><div>Juventus</div></div></span><span class="sc-cTJkRt sc-jNnpgg bImBbN jIfccS"><div class="sc-hYWzPi sc-bCcuKu bvjnIw gLZCfu"><div>25</div><div>231747</div><div>K. Mbappé</div><div>19</div><div>https://cdn.sofifa.org/players/4/19/231747.png</div><div>France</div><div>https://cdn.sofifa.org/flags/18.png</div><div>88</div><div>95</div><div>Paris Saint-Germain</div></div></span><span class="sc-cTJkRt sc-jNnpgg bImBbN jIfccS"><div class="sc-hYWzPi sc-bCcuKu bvjnIw gLZCfu"><div>26</div><div>209331</div><div>M. Salah</div><div>26</div><div>https://cdn.sofifa.org/players/4/19/209331.png</div><div>Egypt</div><div>https://cdn.sofifa.org/flags/111.png</div><div>88</div><div>89</div><div>Liverpool</div></div></span><span class="sc-cTJkRt sc-jNnpgg bImBbN jIfccS"><div class="sc-hYWzPi sc-bCcuKu bvjnIw gLZCfu"><div>27</div><div>200145</div><div>Casemiro</div><div>26</div><div>https://cdn.sofifa.org/players/4/19/200145.png</div><div>Brazil</div><div>https://cdn.sofifa.org/flags/54.png</div><div>88</div><div>90</div><div>Real Madrid</div></div></span><span class="sc-cTJkRt sc-jNnpgg bImBbN jIfccS"><div class="sc-hYWzPi sc-bCcuKu bvjnIw gLZCfu"><div>28</div><div>198710</div><div>J. Rodríguez</div><div>26</div><div>https://cdn.sofifa.org/players/4/19/198710.png</div><div>Colombia</div><div>https://cdn.sofifa.org/flags/56.png</div><div>88</div><div>89</div><div>FC Bayern München</div></div></span><span class="sc-cTJkRt sc-jNnpgg bImBbN jIfccS"><div class="sc-hYWzPi sc-bCcuKu bvjnIw gLZCfu"><div>29</div><div>198219</div><div>L. Insigne</div><div>27</div><div>https://cdn.sofifa.org/players/4/19/198219.png</div><div>Italy</div><div>https://cdn.sofifa.org/flags/27.png</div><div>88</div><div>88</div><div>Napoli</div></div></span><span class="sc-cTJkRt sc-jNnpgg bImBbN jIfccS"><div class="sc-hYWzPi sc-bCcuKu bvjnIw gLZCfu"><div>30</div><div>197781</div><div>Isco</div><div>26</div><div>https://cdn.sofifa.org/players/4/19/197781.png</div><div>Spain</div><div>https://cdn.sofifa.org/flags/45.png</div><div>88</div><div>91</div><div>Real Madrid</div></div></span><span class="sc-cTJkRt sc-jNnpgg bImBbN jIfccS"><div class="sc-hYWzPi sc-bCcuKu bvjnIw gLZCfu"><div>31</div><div>190460</div><div>C. Eriksen</div><div>26</div><div>https://cdn.sofifa.org/players/4/19/190460.png</div><div>Denmark</div><div>https://cdn.sofifa.org/flags/13.png</div><div>88</div><div>91</div><div>Tottenham Hotspur</div></div></span><span class="sc-cTJkRt sc-jNnpgg bImBbN jIfccS"><div class="sc-hYWzPi sc-bCcuKu bvjnIw gLZCfu"><div>32</div><div>189242</div><div>Coutinho</div><div>26</div><div>https://cdn.sofifa.org/players/4/19/189242.png</div><div>Brazil</div><div>https://cdn.sofifa.org/flags/54.png</div><div>88</div><div>89</div><div>FC Barcelona</div></div></span><span class="sc-cTJkRt sc-jNnpgg bImBbN jIfccS"><div class="sc-hYWzPi sc-bCcuKu bvjnIw gLZCfu"><div>33</div><div>188567</div><div>P. Aubameyang</div><div>29</div><div>https://cdn.sofifa.org/players/4/19/188567.png</div><div>Gabon</div><div>https://cdn.sofifa.org/flags/115.png</div><div>88</div><div>88</div><div>Arsenal</div></div></span><span class="sc-cTJkRt sc-jNnpgg bImBbN jIfccS"><div class="sc-hYWzPi sc-bCcuKu bvjnIw gLZCfu"><div>34</div><div>178603</div><div>M. Hummels</div><div>29</div><div>https://cdn.sofifa.org/players/4/19/178603.png</div><div>Germany</div><div>https://cdn.sofifa.org/flags/21.png</div><div>88</div><div>88</div><div>FC Bayern München</div></div></span><span class="sc-cTJkRt sc-jNnpgg bImBbN jIfccS"><div class="sc-hYWzPi sc-bCcuKu bvjnIw gLZCfu"><div>35</div><div>176676</div><div>Marcelo</div><div>30</div><div>https://cdn.sofifa.org/players/4/19/176676.png</div><div>Brazil</div><div>https://cdn.sofifa.org/flags/54.png</div><div>88</div><div>88</div><div>Real Madrid</div></div></span><span class="sc-cTJkRt sc-jNnpgg bImBbN jIfccS"><div class="sc-hYWzPi sc-bCcuKu bvjnIw gLZCfu"><div>36</div><div>173731</div><div>G. Bale</div><div>28</div><div>https://cdn.sofifa.org/players/4/19/173731.png</div><div>Wales</div><div>https://cdn.sofifa.org/flags/50.png</div><div>88</div><div>88</div><div>Real Madrid</div></div></span><span class="sc-cTJkRt sc-jNnpgg bImBbN jIfccS"><div class="sc-hYWzPi sc-bCcuKu bvjnIw gLZCfu"><div>37</div><div>167948</div><div>H. Lloris</div><div>31</div><div>https://cdn.sofifa.org/players/4/19/167948.png</div><div>France</div><div>https://cdn.sofifa.org/flags/18.png</div><div>88</div><div>88</div><div>Tottenham Hotspur</div></div></span><span class="sc-cTJkRt sc-jNnpgg bImBbN jIfccS"><div class="sc-hYWzPi sc-bCcuKu bvjnIw gLZCfu"><div>38</div><div>167664</div><div>G. Higuaín</div><div>30</div><div>https://cdn.sofifa.org/players/4/19/167664.png</div><div>Argentina</div><div>https://cdn.sofifa.org/flags/52.png</div><div>88</div><div>88</div><div>Milan</div></div></span><span class="sc-cTJkRt sc-jNnpgg bImBbN jIfccS"><div class="sc-hYWzPi sc-bCcuKu bvjnIw gLZCfu"><div>39</div><div>164240</div><div>Thiago Silva</div><div>33</div><div>https://cdn.sofifa.org/players/4/19/164240.png</div><div>Brazil</div><div>https://cdn.sofifa.org/flags/54.png</div><div>88</div><div>88</div><div>Paris Saint-Germain</div></div></span><span class="sc-cTJkRt sc-jNnpgg bImBbN jIfccS"><div class="sc-hYWzPi sc-bCcuKu bvjnIw gLZCfu"><div>40</div><div>162835</div><div>S. Handanovič</div><div>33</div><div>https://cdn.sofifa.org/players/4/19/162835.png</div><div>Slovenia</div><div>https://cdn.sofifa.org/flags/44.png</div><div>88</div><div>88</div><div>Inter</div></div></span><span class="sc-cTJkRt sc-jNnpgg bImBbN jIfccS"><div class="sc-hYWzPi sc-bCcuKu bvjnIw gLZCfu"><div>41</div><div>1179</div><div>G. Buffon</div><div>40</div><div>https://cdn.sofifa.org/players/4/19/1179.png</div><div>Italy</div><div>https://cdn.sofifa.org/flags/27.png</div><div>88</div><div>88</div><div>Paris Saint-Germain</div></div></span><span class="sc-cTJkRt sc-jNnpgg bImBbN jIfccS"><div class="sc-hYWzPi sc-bCcuKu bvjnIw gLZCfu"><div>42</div><div>205600</div><div>S. Umtiti</div><div>24</div><div>https://cdn.sofifa.org/players/4/19/205600.png</div><div>France</div><div>https://cdn.sofifa.org/flags/18.png</div><div>87</div><div>92</div><div>FC Barcelona</div></div></span><span class="sc-cTJkRt sc-jNnpgg bImBbN jIfccS"><div class="sc-hYWzPi sc-bCcuKu bvjnIw gLZCfu"><div>43</div><div>201399</div><div>M. Icardi</div><div>25</div><div>https://cdn.sofifa.org/players/4/19/201399.png</div><div>Argentina</div><div>https://cdn.sofifa.org/flags/52.png</div><div>87</div><div>90</div><div>Inter</div></div></span><span class="sc-cTJkRt sc-jNnpgg bImBbN jIfccS"><div class="sc-hYWzPi sc-bCcuKu bvjnIw gLZCfu"><div>44</div><div>201024</div><div>K. Koulibaly</div><div>27</div><div>https://cdn.sofifa.org/players/4/19/201024.png</div><div>Senegal</div><div>https://cdn.sofifa.org/flags/136.png</div><div>87</div><div>90</div><div>Napoli</div></div></span><span class="sc-cTJkRt sc-jNnpgg bImBbN jIfccS"><div class="sc-hYWzPi sc-bCcuKu bvjnIw gLZCfu"><div>45</div><div>195864</div><div>P. Pogba</div><div>25</div><div>https://cdn.sofifa.org/players/4/19/195864.png</div><div>France</div><div>https://cdn.sofifa.org/flags/18.png</div><div>87</div><div>91</div><div>Manchester United</div></div></span><span class="sc-cTJkRt sc-jNnpgg bImBbN jIfccS"><div class="sc-hYWzPi sc-bCcuKu bvjnIw gLZCfu"><div>46</div><div>193041</div><div>K. Navas</div><div>31</div><div>https://cdn.sofifa.org/players/4/19/193041.png</div><div>Costa Rica</div><div>https://cdn.sofifa.org/flags/72.png</div><div>87</div><div>87</div><div>Real Madrid</div></div></span><span class="sc-cTJkRt sc-jNnpgg bImBbN jIfccS"><div class="sc-hYWzPi sc-bCcuKu bvjnIw gLZCfu"><div>47</div><div>192505</div><div>R. Lukaku</div><div>25</div><div>https://cdn.sofifa.org/players/4/19/192505.png</div><div>Belgium</div><div>https://cdn.sofifa.org/flags/7.png</div><div>87</div><div>89</div><div>Manchester United</div></div></span><span class="sc-cTJkRt sc-jNnpgg bImBbN jIfccS"><div class="sc-hYWzPi sc-bCcuKu bvjnIw gLZCfu"><div>48</div><div>192387</div><div>C. Immobile</div><div>28</div><div>https://cdn.sofifa.org/players/4/19/192387.png</div><div>Italy</div><div>https://cdn.sofifa.org/flags/27.png</div><div>87</div><div>87</div><div>Lazio</div></div></span><span class="sc-cTJkRt sc-jNnpgg bImBbN jIfccS"><div class="sc-hYWzPi sc-bCcuKu bvjnIw gLZCfu"><div>49</div><div>189332</div><div>Jordi Alba</div><div>29</div><div>https://cdn.sofifa.org/players/4/19/189332.png</div><div>Spain</div><div>https://cdn.sofifa.org/flags/45.png</div><div>87</div><div>87</div><div>FC Barcelona</div></div></span></div></div></div></div></div></div></div><div class="content-box"><div><div class="content-box__title-bar"><div class="sc-bclYmG kZtWSG" style="line-height: 46px;">Similar Datasets</div></div></div><div class="content-box__content-section"><div class="sc-gvvwOg SIPGg"><div class="block-link sc-tQTSe dfvmtn block-link--bordered"><a class="block-link__anchor" href="https://www.kaggle.com/shivamb/netflix-shows"></a><div class="sc-hsCUlV gUMYKj"><div class="sc-jmWYQI jfswrR"><img alt="Netflix Movies and TV Shows" src="./FIFA 19 complete player dataset _ Kaggle_files/dataset-thumbnail(1).jpg" class="sc-gdrmI dWUwml"></div><div class="sc-ftUxPC fxtwhw"><span class="sc-jOSyMn gCplBw">Netflix Movies and TV Shows</span></div></div></div><div class="block-link sc-tQTSe dfvmtn block-link--bordered"><a class="block-link__anchor" href="https://www.kaggle.com/hugomathien/soccer"></a><div class="sc-hsCUlV gUMYKj"><div class="sc-jmWYQI jfswrR"><img alt="European Soccer Database" src="./FIFA 19 complete player dataset _ Kaggle_files/dataset-thumbnail(2).jpg" class="sc-gdrmI dWUwml"></div><div class="sc-ftUxPC fxtwhw"><span class="sc-jOSyMn gCplBw">European Soccer Database</span></div></div></div><div class="block-link sc-tQTSe dfvmtn block-link--bordered"><a class="block-link__anchor" href="https://www.kaggle.com/spscientist/students-performance-in-exams"></a><div class="sc-hsCUlV gUMYKj"><div class="sc-jmWYQI jfswrR"><img alt="Students Performance in Exams" src="./FIFA 19 complete player dataset _ Kaggle_files/dataset-thumbnail(3).jpg" class="sc-gdrmI dWUwml"></div><div class="sc-ftUxPC fxtwhw"><span class="sc-jOSyMn gCplBw">Students Performance in Exams</span></div></div></div><div class="block-link sc-tQTSe dfvmtn block-link--bordered"><a class="block-link__anchor" href="https://www.kaggle.com/olistbr/brazilian-ecommerce"></a><div class="sc-hsCUlV gUMYKj"><div class="sc-jmWYQI jfswrR"><img alt="Brazilian E-Commerce Public Dataset by Olist" src="./FIFA 19 complete player dataset _ Kaggle_files/dataset-thumbnail.png" class="sc-gdrmI dWUwml"></div><div class="sc-ftUxPC fxtwhw"><span class="sc-jOSyMn gCplBw">Brazilian E-Commerce Public Dataset by Olist</span></div></div></div><div class="block-link sc-tQTSe dfvmtn block-link--bordered"><a class="block-link__anchor" href="https://www.kaggle.com/heesoo37/120-years-of-olympic-history-athletes-and-results"></a><div class="sc-hsCUlV gUMYKj"><div class="sc-jmWYQI jfswrR"><img alt="120 years of Olympic history: athletes and results" src="./FIFA 19 complete player dataset _ Kaggle_files/dataset-thumbnail(4).jpg" class="sc-gdrmI dWUwml"></div><div class="sc-ftUxPC fxtwhw"><span class="sc-jOSyMn gCplBw">120 years of Olympic history: athletes and results</span></div></div></div></div></div></div><div class="content-box content-box--no-title"><div class="content-box__content-section content-box__content-section--no-title"><div class="content-box__simple-content-box"><div class="content-box__simple-content"><div class="sc-jPcbeS bdLQlh"><ul class="horizontal-list"><li class="horizontal-list-item horizontal-list-item--bullet horizontal-list-item--default"><span>840,701 views</span></li><li class="horizontal-list-item horizontal-list-item--bullet horizontal-list-item--default"><span>134,336 downloads</span></li><li class="horizontal-list-item horizontal-list-item--bullet horizontal-list-item--default"><span>601 notebooks</span></li><li class="horizontal-list-item horizontal-list-item--bullet horizontal-list-item--default"><span>35 topics</span></li></ul><div class="sc-VtYES hKkhZx">View more activity</div></div></div></div></div></div><div role="alertdialog" aria-modal="true" class="sc-ByBTK kNJmgl mdc-dialog"><div class="mdc-dialog__container"><div class="mdc-dialog__surface"><div class="sc-eJaMvc gTguOy"><button aria-label="close" class="sc-jSFjdj SCuyd sc-fhFsES cUmbRx google-material-icons">close</button><div class="sc-jfQmdl cGTMBA"><div class="sc-jmbEiQ hxjrdy"><div _size="xlarge" class="rmwc-circular-progress rmwc-circular-progress--size-xlarge rmwc-circular-progress--indeterminate rmwc-circular-progress--thickerstroke"><svg class="rmwc-circular-progress__circle" viewBox="0 0 48 48"><circle class="rmwc-circular-progress__path" cx="24" cy="24" r="20"></circle></svg></div></div></div></div></div></div><div class="mdc-dialog__scrim"></div></div></div></div><div id="nav-footer" class="sc-fTZpSt ljKCCP"></div></div><div class="sc-cvdZrU kyaiJw"></div><div aria-live="assertive" aria-atomic="true" aria-hidden="true" class="sc-gmfbyV bBjmsr mdc-snackbar mdc-snackbar--leading"><div class="mdc-snackbar__surface"><div role="status" aria-live="polite" class="mdc-snackbar__label"><div style="display: none;"></div></div><div class="mdc-snackbar__actions"></div></div></div></div></div>
+<div data-component-name="NavigationContainer" style="display: flex; flex-direction: column; flex: 1 0 auto;"></div><script class="kaggle-component" nonce="">var Kaggle=window.Kaggle||{};Kaggle.State=Kaggle.State||[];Kaggle.State.push({"navigationType":"BOTH_NAV"});performance && performance.mark && performance.mark("NavigationContainer.componentCouldBootstrap");</script>
+<div id="site-body" class="hide">
+    
+
+<div data-component-name="DatasetListMaterial" style="display: flex; flex-direction: column; flex: 1 0 auto;"></div><script class="kaggle-component" nonce="">var Kaggle=window.Kaggle||{};Kaggle.State=Kaggle.State||[];Kaggle.State.push({});performance && performance.mark && performance.mark("DatasetListMaterial.componentCouldBootstrap");</script>
+
+</div>
+
+
+
+    <!-- Cheers, web-7fdc58b947-kdk2cp. -->
+
+  </main>
+
+
+
+<div class="sc-eYKchh jxysey sc-feWZte kmQIwo mdc-menu-surface"><div role="document"><div class="sc-eQxmTn GrfUT"><div tabindex="0" class="sc-jEWLvH djJqSu"><h5 class="sc-dIvrsQ sc-hHEiqL kSVYRu ccTnQh">No Active Events</h5><br><p class="sc-cxNHIi sc-lmgQwP kYejgE hpRDUw">Create notebooks  or datasets and keep track of their status here.</p><br><div class="sc-cCCCpg hxySRD"><a href="https://www.kaggle.com/code/welcome" target="_blank" tabindex="0" class="sc-dTSzeu krkYvd"><button class="sc-htmcrh dsWavA" tabindex="-1" role="button"><i color="#FFFFFF" sizevalue="18px" class="rmwc-icon google-material-icons sc-gKAaRy eoZVBq">add</i><span class="sc-gXfVKN sc-cBoqAE jmJemH lRfdj">New Notebook</span></button></a><a href="https://www.kaggle.com/datasets/new" target="_blank" tabindex="0" class="sc-dTSzeu krkYvd"><button class="sc-htmcrh dsWavA" tabindex="-1" role="button"><i color="#FFFFFF" sizevalue="18px" class="rmwc-icon google-material-icons sc-gKAaRy eoZVBq">add</i><span class="sc-gXfVKN sc-cBoqAE jmJemH lRfdj">New Dataset</span></button></a></div></div><ul class="km-list"><li class="sc-gSYDnn jcqGXt"><div class="sc-laZMeE jaMIyn sc-iyHPJt lhbqAY"><a class="sc-eJocfa jARayQ"><div class="sc-iNiQyp jdiWPe"><div class="sc-jffHpj jjTcTs"><div class="sc-ffgBur OeZLy"><i emphasis="high" sizevalue="24px" class="rmwc-icon google-material-icons sc-gKAaRy iExPwm sc-lcvaEy dfPHWA">auto_awesome_motion</i><div color="#FAE041" class="sc-fpAkvV gROLTA">0</div></div></div><div class="sc-iCoGMd sc-fKgJPI sc-eirqVv cHRTxu cxbltl hXpqcb"><p class="sc-cxNHIi sc-lmgQwP ctyHFD hpRDUw">0 Active Events</p></div></div></a><div class="sc-oeezt jVhlnb"><i emphasis="high" sizevalue="24px" role="button" tabindex="0" class="rmwc-icon google-material-icons sc-gKAaRy iExPwm">expand_more</i></div></div></li></ul></div></div></div><script src="./FIFA 19 complete player dataset _ Kaggle_files/loader.js(1).download" async=""></script></body></html>
